@@ -10,6 +10,10 @@ Here you will find a collection of technical information for the various control
 - [Nintendo Wii controllers](wii/README.md)
 - [Software compatibility (WIP)](compatibility/README.md)
 
+## GitHub repository
+
+This documentation is stored in a [GitHub repository](https://github.com/MarcRiera/ddgo-controller-docs). Contributions are more than welcome!
+
 ## References
 
 - General information: http://autotraintas.hariko.com
