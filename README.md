@@ -8,6 +8,7 @@ Here you will find a collection of technical information for the various control
 - [Serial port controllers](serial/README.md)
 - [USB controllers](usb/README.md)
 - [Nintendo Wii controllers](wii/README.md)
+- [Standalone controllers](standalone/README.md)
 - [Software compatibility (WIP)](compatibility/README.md)
 
 ## GitHub repository
