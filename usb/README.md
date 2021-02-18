@@ -16,15 +16,15 @@ This controller shares most of its behaviour with DGOC-44U, but internal details
 
 ### DGOC-44U
 
-This controller is a HID-compliant joystick with two axes and six buttons. You can find its HID descriptor [here](descriptor_dgoc44u.txt).
+This controller is a HID-compliant joystick with two axes and six buttons. You can find its HID descriptor [here](descriptor-dgoc44u.txt).
 
-|                   |                             |
-|-------------------|-----------------------------|
-| **Product name**  | `電車でGO! コントローラ USB版` |
-| **Manufacturer**  | `TAITO`                     |
-| **Vendor ID**     | `0x0AE4`                    |
-| **Product ID**    | `0x0003`                    |
-| **Serial number** | `TCPP20009`                 |
+|                   |                           |
+|-------------------|---------------------------|
+| **Product name**  | 電車でGO! コントローラ USB版 |
+| **Manufacturer**  | TAITO                     |
+| **Vendor ID**     | 0x0AE4                    |
+| **Product ID**    | 0x0003                    |
+| **Serial number** | TCPP20009                 |
 
 The controller sends reports to the host (PC) formed by 6 bytes:
 
