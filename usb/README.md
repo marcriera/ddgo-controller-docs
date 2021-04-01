@@ -130,8 +130,8 @@ The data sent to the controller follows the structure below.
 * **Door lamp:** **0x0?** is **Off**, **0x8?** is **On**.
 * **Limit approach:** values between **0x?0** and **0x?A** representing the number of LEDs lit above the speedometer. In-game, these mark the 10 km/h right below the speed limit.
 * **Speed gauge:** values between **0x00** and **0x16** representing the number of LEDs lit on the speed gauge. LED #23 cannot be lit. In-game, these mark 15 km/h increments in the current speed, with one lit when speed is 1-15 km/h, two when 16-30 km/h, etc.
-* **Speedometer:** values between **0x0000** and **0x0999** representing the current speed. Values **0xA-0xF** are not used (i.e. **120 km/h** should be represented as **0x0120**, NOT **0x0078**.
-* **ATC limit:** values between **0x0000** and **0x0999** representing the ATC speed limit. Values **0xA-0xF** are not used (i.e. **120 km/h** should be represented as **0x0120**, NOT **0x0078**.
+* **Speedometer:** values between **0x0000** and **0x0999** representing the current speed. Values **0xA-0xF** are not used (i.e. **120 km/h** should be represented as **0x0120**, NOT **0x0078**).
+* **ATC limit:** values between **0x0000** and **0x0999** representing the ATC speed limit. Values **0xA-0xF** are not used (i.e. **120 km/h** should be represented as **0x0120**, NOT **0x0078**).
 
 Multi-byte values should be stored in **Little Endian**.
 
