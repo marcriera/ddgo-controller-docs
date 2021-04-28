@@ -206,4 +206,5 @@ No details are available regarding internal functioning.
 
 ## Acknowledgements
 
-Big thanks to [GMMan](https://github.com/GMMan), who has provided the internal details of the DGOC-44U.
+[GMMan](https://github.com/GMMan), who has provided the internal details of the DGOC-44U.
+[TheYamanote](https://twitter.com/The_Yamanote), who has helped with the TCPP-20009.
