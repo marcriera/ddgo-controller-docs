@@ -10,6 +10,7 @@ Here you will find a collection of technical information for the various control
 - [Nintendo Wii controllers](wii/README.md)
 - [Standalone controllers](standalone/README.md)
 - [Software compatibility (WIP)](compatibility/README.md)
+- [Adapters and hacks](adapters/README.md)
 
 ## GitHub repository
 
