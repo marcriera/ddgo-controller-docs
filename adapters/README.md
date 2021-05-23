@@ -15,7 +15,7 @@ The codes emulate a Type 2 controller. You will need to connect the controller a
 - Port 1: Dualshock or Dualshock 2 (D-pad, needed for menus)
 - Port 2: PlayStation 1 controller (handles and buttons, **SELECT** is mapped to **D**)
 
-Each game requires an specific cheat code:
+Each game requires a specific cheat code:
 
 - [Densha de GO! Professional 2](controller-cheat_pro2.txt)
 - [Densha de GO! Professional 2 (Taito Best)](controller-cheat_pro2best.txt)
