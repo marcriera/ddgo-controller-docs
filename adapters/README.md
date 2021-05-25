@@ -22,3 +22,15 @@ Each game requires a specific cheat code:
 - [Densha de GO! Professional 2 (Taito Best)](controller-cheat_pro2best.txt)
 
 For retail discs, the codes can be loaded with [ps2rd](https://github.com/mlafeldt/ps2rd) or [Cheat Device](https://github.com/root670/CheatDevicePS2). If you are using OPL, it already includes ps2rd and you just need to copy the codes and enable cheats.
+
+### Input plugins for BVE Trainsim/OpenBVE
+
+BVE Trainsim and OpenBVE both support **input plugins**, which allow expanding the controllers compatible with the program.
+
+BVE Trainsim requires installing external input plugins, depending on the controller:
+
+- [Classic controllers](http://blog.livedoor.jp/hase_6809/archives/1249844.html) (USB adapter required)
+- [DGG-255/DGOC-44U](http://www.konkyu.net/DenGoControllerInterface.aspx)
+- [OHC-PC01](http://www.konkyu.net/SanYingControllerInterface.aspx)
+
+OpenBVE includes built-in input plugins for all official Densha de GO! controllers (except TCPP-20017) and OHC-PC01. They can be enabled and configured in the program's settings. Note that a USB adapter is required for classic controllers.
