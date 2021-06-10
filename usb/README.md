@@ -222,11 +222,17 @@ The controller sends reports to the host (PS2) formed by 8 bytes:
 |:------:|:------:|:------:|:------:|:-------:|:---------:|
 | Brake  | Power  | Pedal  | D-Pad  | Buttons | Unused    |
 
-Unlike traditional controllers, the brake handle is analogue and the brake byte reflects the position of the handle precisely. There are three areas with the ranges listed below. 
+Unlike traditional controllers, the brake handle is analogue and the brake byte reflects the position of the handle precisely. There are three areas with the ranges listed below, plus the emergency notch.
 
-| Reduce pressure | Keep pressure | Increase pressure |
-|:---------------:|:-------------:|:-----------------:|
-| 0x24-0x64       | 0x65-0x89     | 0x8A-0xD7         |
+| Reduce pressure | Keep pressure | Increase pressure | Emergency |
+|:---------------:|:-------------:|:-----------------:|:---------:|
+| 0x23-0x64       | 0x65-0x89     | 0x8A-0xD6         | 0xD7      |
+
+When using the controller with **Densha de GO! Professional 2** or **Densha de GO! Final**, the brake handle is interpreted as having 6 brake notches + emergency. The aproximate byte range for each notch is listed below (taken from **Densha de GO! Professional 2**).
+
+| Released  | B1        | B2        | B3        | B4        | B5        | B6        | Emergency |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| 0x23-0x2A | 0x2B-0x3C | 0x3D-0x4E | 0x4F-0x63 | 0x64-0x8A | 0x8B-0xB0 | 0xB1-0xD6 | 0xD7      |
 
 The values for the power notch byte are listed below.
 
@@ -254,5 +260,5 @@ The button byte uses seven bits to represent the state of the physical buttons. 
 
 ## Acknowledgements
 
-[GMMan](https://github.com/GMMan), who has provided the internal details of the DGOC-44U.
-[TheYamanote](https://twitter.com/The_Yamanote), who has helped with the TCPP-20009.
+- [GMMan](https://github.com/GMMan), who has provided the internal details of the DGOC-44U.
+- [TheYamanote](https://twitter.com/The_Yamanote), who has helped with the TCPP-20009.
