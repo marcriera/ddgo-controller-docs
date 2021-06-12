@@ -12,13 +12,17 @@ The information in this section applies to the following controllers:
 
 ### DGC-255
 
-This controller shares most of its behaviour with DGOC-44U, but internal details need to be confirmed.
+This controller has one handle (5 power notches and 8+emergency brake notches), a D-Pad and 6 buttons (Select, Start, A, B, C, D).
+
+Internally, it is a HID-compliant joystick with two axes, 6 buttons and a PoV hat switch (the handle positions are reported via axes).
+
+Besides the PoV hat switch, it reports the same data as a DGOC-44U controller. The games check if the controller has a PoV hat switch to distinguish between a DGC-255 and a DGOC-44U.
 
 ### DGOC-44U
 
 This controller has two handles (5 power notches and 8+emergency brake notches) and 6 buttons (Select, Start, A, B, C, D).
 
-Internally, it is a HID-compliant joystick with two axes and six buttons (the handle positions are reported via axes). You can find its HID descriptor [here](descriptor-dgoc44u.txt).
+Internally, it is a HID-compliant joystick with two axes and 6 buttons (the handle positions are reported via axes). You can find its HID descriptor [here](descriptor-dgoc44u.txt).
 
 |                   |                           |
 |-------------------|---------------------------|
@@ -58,7 +62,7 @@ No details are available regarding internal functioning.
 
 ### TCPP-20009/TCPP-20012
 
-This controller has two handles (5 power notches and 8+emergency brake notches), a D-Pad and six buttons (Select, Start, A, B, C, D). In addition, it provides a door lamp and a 3.5 mm jack connector to plug a horn pedal. There are two rumble motors, one in each handle.
+This controller has two handles (5 power notches and 8+emergency brake notches), a D-Pad and 6 buttons (Select, Start, A, B, C, D). In addition, it provides a door lamp and a 3.5 mm jack connector to plug a horn pedal. There are two rumble motors, one in each handle.
 
 Internally, it is a HID device with a vendor-specific class.
 
@@ -127,7 +131,7 @@ The data sent to the controller follows the structure below.
 
 ### TCPP-20011
 
-This controller has two handles (13 power notches and 7+emergency brake notches), a D-Pad and six buttons (Select, Start, A, B, C, D). In addition, it provides a simple display, a door lamp and a 3.5 mm jack connector to plug a horn pedal. There are two rumble motors, one in each handle.
+This controller has two handles (13 power notches and 7+emergency brake notches), a D-Pad and 6 buttons (Select, Start, A, B, C, D). In addition, it provides a simple display, a door lamp and a 3.5 mm jack connector to plug a horn pedal. There are two rumble motors, one in each handle.
 
 Internally, it is a HID device with a vendor-specific class.
 
@@ -202,7 +206,7 @@ Multi-byte values should be stored in **Little Endian**.
 
 ### TCPP-20014
 
-This controller has two handles (4 power notches and an analogue brake handle with three areas), a D-Pad and seven buttons (Select, Start, Horn, Announce, Camera, Left doors, Right doors). In addition, it provides a 3.5 mm jack connector to plug a horn pedal.
+This controller has two handles (4 power notches and an analogue brake handle with three areas), a D-Pad and 7 buttons (Select, Start, Horn, Announce, Camera, Left doors, Right doors). In addition, it provides a 3.5 mm jack connector to plug a horn pedal.
 
 Internally, it is a HID device with a vendor-specific class.
 
@@ -218,7 +222,7 @@ Internally, it is a HID device with a vendor-specific class.
 
 The controller sends reports to the host (PS2) formed by 8 bytes:
 
-| Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5 -| Bytes 6-8 |
+| Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5  | Bytes 6-8 |
 |:------:|:------:|:------:|:------:|:-------:|:---------:|
 | Brake  | Power  | Pedal  | D-Pad  | Buttons | Unused    |
 
