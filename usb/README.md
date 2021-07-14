@@ -9,6 +9,7 @@ The information in this section applies to the following controllers:
 - TCPP-20011: Shinkansen controller (Sony PlayStation 2)
 - TCPP-20012: two-handle controller "Type 2", purple skeleton (Sony PlayStation 2)
 - TCPP-20014: Ryojōhen controller (Sony PlayStation 2)
+- MTC: Multi Train Controller (Sony PlayStation 2)
 
 ### DGC-255
 
@@ -261,6 +262,10 @@ The button byte uses seven bits to represent the state of the physical buttons. 
 | Button 1 | Button 2 | Button 3 | Button 4    | Button 5   | Button 6 | Button 7 |
 |:--------:|:--------:|:--------:|:-----------:|:----------:|:--------:|:--------:|
 | Horn     | Announce | Camera   | Right doors | Left doors | SELECT   | START    |
+
+### MTC
+
+No details are available regarding internal functioning.
 
 ## Acknowledgements
 
