@@ -10,6 +10,7 @@ The information in this section applies to the following controllers:
 - TCPP-20012: two-handle controller "Type 2", purple skeleton (Sony PlayStation 2)
 - TCPP-20014: Ryojōhen controller (Sony PlayStation 2)
 - MTC: Multi Train Controller (Sony PlayStation 2)
+- ZKNS-001: one-handle controller (Nintendo Switch)
 
 ### DGC-255
 
@@ -272,6 +273,10 @@ The button byte uses seven bits to represent the state of the physical buttons. 
 | Horn     | Announce | Camera   | Right doors | Left doors | SELECT   | START    |
 
 ### MTC
+
+No details are available regarding internal functioning.
+
+### ZKNS-001
 
 No details are available regarding internal functioning.
 
