@@ -24,6 +24,7 @@ Each game requires a specific cheat code:
 There are also cheat codes available for games in the **Train Simulator** series, emulating a Multi Train Controller (MTC):
 
 - [Train Simulator: Midosuji Line](controller-cheat_midosuji.txt)
+- [Train Simulator + Densha de GO!](controller-cheat_tsddgo.txt)
 
 For retail discs, the codes can be loaded with [ps2rd](https://github.com/mlafeldt/ps2rd) or [Cheat Device](https://github.com/root670/CheatDevicePS2). If you are using OPL, it already includes ps2rd and you just need to copy the codes and enable cheats.
 
