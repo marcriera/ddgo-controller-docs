@@ -20,6 +20,7 @@ Each game requires a specific cheat code:
 - [Densha de GO! Ryojouhen](controller-cheat_ryojouhen.txt)
 - [Densha de GO! Professional 2](controller-cheat_pro2.txt)
 - [Densha de GO! Professional 2 (Taito Best)](controller-cheat_pro2best.txt)
+- [Densha de GO! Final](controller-cheat_final.txt)
 
 There are also cheat codes available for games in the **Train Simulator** series, emulating a Multi Train Controller (MTC):
 
