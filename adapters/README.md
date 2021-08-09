@@ -6,14 +6,14 @@ Besides the official compatibility, it is possible to use unofficial adapters, t
 
 [Autotraintas](https://autotraintas.hariko.com) has created a tool that makes it possible to use nearly any Densha de GO! controller with the PC versions of the games. This includes the classic console controllers (USB adapter required) and the USB controllers for the PlayStation 2. The tool patches the game memory on the fly to reflect the input from the controller.
 
-### PlayStation 2 cheat codes for PlayStation 1 controllers
+### PlayStation 2 cheat codes for PlayStation controllers
 
-While **Densha de GO! 3** and **Densha de GO! Shinkansen** officially support the original (non-USB) PlayStation 1 controllers, other games are only compatible with USB controllers. Via cheat codes, it is possible to use the original PlayStation 1 controllers on real hardware, either with retail discs or via OPL.
+While **Densha de GO! 3** and **Densha de GO! Shinkansen** officially support the original (non-USB) PlayStation controllers, other games are only compatible with USB controllers. Via cheat codes, it is possible to use the original PlayStation controllers on real hardware, either with retail discs or via OPL.
 
 The codes emulate a Type 2 controller. You will need to connect the controller as follows:
 
 - Port 1: Dualshock or Dualshock 2 (D-pad, **SELECT**)
-- Port 2: PlayStation 1 controller (handles and buttons, **SELECT** is mapped to **D**)
+- Port 2: PlayStation controller (handles and buttons, **SELECT** is mapped to **D**)
 
 Each game requires a specific cheat code:
 
