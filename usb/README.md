@@ -26,15 +26,15 @@ This controller has two handles (5 power notches and 8+emergency brake notches) 
 
 Internally, it is a HID-compliant joystick with two axes and 6 buttons (the handle positions are reported via axes).
 
-|                           |                                           |
-|---------------------------|-------------------------------------------|
-| **Product name**          | 電車でGO! コントローラ USB版                 |
-| **Manufacturer**          | TAITO                                     |
-| **Vendor ID**             | 0x0AE4                                    |
-| **Product ID**            | 0x0003                                    |
-| **Serial number**         | TCPP20009                                 |
-| **Standard descriptor**   | Unavailable                               |
-| **HID report descriptor** | [Link](dgoc44u_hid-report-descriptor.txt) |
+|                             |                                           |
+|-----------------------------|-------------------------------------------|
+| **Product name**            | 電車でGO! コントローラ USB版                 |
+| **Manufacturer**            | TAITO                                     |
+| **Vendor ID**               | 0x0AE4                                    |
+| **Product ID**              | 0x0003                                    |
+| **Serial number**           | TCPP20009                                 |
+| **USB standard descriptor** | Unavailable                               |
+| **HID report descriptor**   | [Link](dgoc44u_hid-report-descriptor.txt) |
 
 The controller sends reports to the host (PC) formed by 6 bytes:
 
@@ -70,15 +70,15 @@ This controller has two handles (5 power notches and 8+emergency brake notches),
 
 Internally, it is a HID device with a vendor-specific class.
 
-|                           |                                           |
-|---------------------------|-------------------------------------------|
-| **Product name**          | TAITO_DENSYA_CON_T01                      |
-| **Manufacturer**          | TAITO                                     |
-| **Vendor ID**             | 0x0AE4                                    |
-| **Product ID**            | 0x0004                                    |
-| **Serial number**         | TCPP20010                                 |
-| **Standard descriptor**   | [Link](tcpp20009_standard-descriptor.txt) |
-| **HID report descriptor** | Unavailable                               |
+|                             |                                           |
+|-----------------------------|-------------------------------------------|
+| **Product name**            | TAITO_DENSYA_CON_T01                      |
+| **Manufacturer**            | TAITO                                     |
+| **Vendor ID**               | 0x0AE4                                    |
+| **Product ID**              | 0x0004                                    |
+| **Serial number**           | TCPP20010                                 |
+| **USB standard descriptor** | [Link](tcpp20009_standard-descriptor.txt) |
+| **HID report descriptor**   | Unavailable                               |
 
 #### Input
 
@@ -141,15 +141,15 @@ This controller has two handles (13 power notches and 7+emergency brake notches)
 
 Internally, it is a HID device with a vendor-specific class.
 
-|                           |                                           |
-|---------------------------|-------------------------------------------|
-| **Product name**          | TAITO_DENSYA_CON_T02                      |
-| **Manufacturer**          | TAITO                                     |
-| **Vendor ID**             | 0x0AE4                                    |
-| **Product ID**            | 0x0005                                    |
-| **Serial number**         | TCPP20011                                 |
-| **Standard descriptor**   | [Link](tcpp20011_standard-descriptor.txt) |
-| **HID report descriptor** | Unavailable                               |
+|                             |                                           |
+|-----------------------------|-------------------------------------------|
+| **Product name**            | TAITO_DENSYA_CON_T02                      |
+| **Manufacturer**            | TAITO                                     |
+| **Vendor ID**               | 0x0AE4                                    |
+| **Product ID**              | 0x0005                                    |
+| **Serial number**           | TCPP20011                                 |
+| **USB standard descriptor** | [Link](tcpp20011_standard-descriptor.txt) |
+| **HID report descriptor**   | Unavailable                               |
 
 #### Input
 
@@ -218,15 +218,15 @@ This controller has two handles (4 power notches and an analogue brake handle wi
 
 Internally, it is a HID device with a vendor-specific class.
 
-|                           |                                           |
-|---------------------------|-------------------------------------------|
-| **Product name**          | TAITO_DENSYA_CON_T03                      |
-| **Manufacturer**          | TAITO                                     |
-| **Vendor ID**             | 0x0AE4                                    |
-| **Product ID**            | 0x0007                                    |
-| **Serial number**         | TCPP20014                                 |
-| **Standard descriptor**   | [Link](tcpp20014_standard-descriptor.txt) |
-| **HID report descriptor** | Unavailable                               |
+|                             |                                           |
+|-----------------------------|-------------------------------------------|
+| **Product name**            | TAITO_DENSYA_CON_T03                      |
+| **Manufacturer**            | TAITO                                     |
+| **Vendor ID**               | 0x0AE4                                    |
+| **Product ID**              | 0x0007                                    |
+| **Serial number**           | TCPP20014                                 |
+| **USB standard descriptor** | [Link](tcpp20014_standard-descriptor.txt) |
+| **HID report descriptor**   | Unavailable                               |
 
 #### Input
 
@@ -278,7 +278,25 @@ No details are available regarding internal functioning.
 
 ### ZKNS-001
 
-No details are available regarding internal functioning.
+This controller has one handle (5 power notches and 8+emergency brake notches) and 16 buttons (the same as a Nintendo Switch Pro Controller, except the stick buttons).
+
+Internally, it is a HID-compliant joystick mimicking a Nintendo Switch Pro Controller. The stick buttons and the right stick are unused, and only the Y axis of the left stick is used.
+
+|                             |                                           |
+|-----------------------------|-------------------------------------------|
+| **Product name**            | One Handle MasCon for Nintendo Switch     |
+| **Manufacturer**            | *None*                                    |
+| **Vendor ID**               | 0x0F0D                                    |
+| **Product ID**              | 0x00C1                                    |
+| **Serial number**           | *None*                                    |
+| **USB standard descriptor** | [Link](zkns001_standard-descriptor.txt)   |
+| **HID report descriptor**   | [Link](zkns001_hid-report-descriptor.txt) |
+
+The power/brake handle notches are reported in the Y axis of the left stick. There are no transition values between notches. In addition, when the handle is set to **Emergency**, **ZL** is pressed.
+
+| Emergency | B8   | B7   | B6   | B5   | B4   | B3   | B2   | B1   | N    | P1   | P2   | P3   | P4   | P5   |
+|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00      | 0x05 | 0x13 | 0x20 | 0x2E | 0x3C | 0x49 | 0x57 | 0x65 | 0x80 | 0x9F | 0xB7 | 0xCE | 0xE6 | 0xFF |
 
 ## Acknowledgements
 
