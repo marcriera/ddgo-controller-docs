@@ -1,0 +1,17 @@
+baseURL = "https://marcriera.github.io/ddgo-controller-docs"
+languageCode = "en-us"
+title = "Densha de GO! controller documentation"
+theme = "relearn"
+
+[params]
+disableSearch = true
+themeVariant = [ "relearn-light", "relearn-dark" ]
+collapsibleMenu = true
+disableLandingPageButton = true
+disableShortcutsTitle=true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/MarcRiera/ddgo-controller-docs"
+weight = 1
