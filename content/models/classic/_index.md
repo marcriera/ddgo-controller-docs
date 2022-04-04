@@ -1,18 +1,21 @@
-## Classic console controllers
+---
+title: "Classic consoles"
+weight: 1
+---
 
 The information in this section applies to the following controllers:
 
-- SLPH-00051: two-handle controller (Sony PlayStation)
-- TC-5175290: two-handle controller (Sega Saturn)
-- TCPP-20001: single-handle controller (Sony PlayStation)
-- TCPP-20002: gamepad controller (Sony PlayStation)
-- TCPP-20003: two-handle controller (Nintendo 64)
-- TCPP-20004: two-handle controller (Sega Dreamcast)
-- TCPP-20008: two-handle controller, golden (Sony PlayStation)
+- **SLPH-00051:** two-handle controller (Sony PlayStation)
+- **TC-5175290:** two-handle controller (Sega Saturn)
+- **TCPP-20001:** single-handle controller (Sony PlayStation)
+- **TCPP-20002:** gamepad controller (Sony PlayStation)
+- **TCPP-20003:** two-handle controller (Nintendo 64)
+- **TCPP-20004:** two-handle controller (Sega Dreamcast)
+- **TCPP-20008:** two-handle controller, golden (Sony PlayStation)
 
 These controllers all have five physical buttons (**SELECT**, **START**, **A**, **B**, **C**) and two handles (with the TCPP-20001 combining them into one). Internally, they use the same protocol as a standard controller for the corresponding console and input is reported in the data bytes corresponding to buttons (where each bit reports the state of a single button). Only the regular physical buttons have dedicated bits for them; the handles combine three and four bits for the power notches and brake notches, respectively (you can find an example with the Nintendo 64 [here](https://sites.google.com/site/consoleprotocols/home/nintendo-joy-bus-documentation/n64-specific/train-controller)).
 
-### Power handle bit usage
+## Power handle bit usage
 
 The power handle uses a combination of three bits (buttons) to represent each notch. When using the TCPP-20001 controller, the equivalent of **N** is reported for power whenever a brake notch is applied.
 
@@ -26,7 +29,7 @@ The power handle uses a combination of three bits (buttons) to represent each no
 | P5         | X       | -       | -       |
 | Transition | -       | -       | -       |
 
-### Brake handle bit usage
+## Brake handle bit usage
 
 The brake handle uses a combination of four bits (buttons) to represent each notch. When using the TCPP-20001 controller, the equivalent of **Released** is reported for brake whenever a power notch is applied.
 
@@ -51,7 +54,7 @@ The brake handle uses a combination of four bits (buttons) to represent each not
 
 The unmarked positions can be found between **B8** and **Emergency** and produce no click when moving the handle. When using the TCPP-20001 or the TCPP-20002, only the first and fourth unmarked positions are available.
 
-### Button mapping to a standard controller
+## Button mapping to a standard controller
 
 Because they use the same data bytes, the input between a Densha de GO! controller and a standard controller for each console can be matched as follows:
 
@@ -72,6 +75,6 @@ Because they use the same data bytes, the input between a Densha de GO! controll
 
 This is useful when using a USB adapter to read the controller input from a PC.
 
-### PlayStation-specific information
+## PlayStation-specific information
 
 The controllers report the same data amount and structure as a standard digital PlayStation controller. UP and DOWN are pressed permanently. The games detect the controllers with these two buttons, as it is an impossible combination with a standard  digital controller.

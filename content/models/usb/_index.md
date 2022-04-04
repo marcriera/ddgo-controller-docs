@@ -1,16 +1,19 @@
-## USB controllers
+---
+title: "USB"
+weight: 3
+---
 
 The information in this section applies to the following controllers:
 
-- DGC-255: one-handle controller (Microsoft Windows)
-- DGOC-44U: two-handle controller (Microsoft Windows)
-- DRC-184/DYC-288: Ryojōhen controller (Microsoft Windows)
-- TCPP-20009: two-handle controller "Type 2" (Sony PlayStation 2)
-- TCPP-20011: Shinkansen controller (Sony PlayStation 2)
-- TCPP-20012: two-handle controller "Type 2", purple skeleton (Sony PlayStation 2)
-- TCPP-20014: Ryojōhen controller (Sony PlayStation 2)
-- MTC: Multi Train Controller (Sony PlayStation 2)
-- ZKNS-001: one-handle controller (Nintendo Switch)
+- **DGC-255:** one-handle controller (Microsoft Windows)
+- **DGOC-44U:** two-handle controller (Microsoft Windows)
+- **DRC-184/DYC-288:** Ryojōhen controller (Microsoft Windows)
+- **TCPP-20009:** two-handle controller "Type 2" (Sony PlayStation 2)
+- **TCPP-20011:** Shinkansen controller (Sony PlayStation 2)
+- **TCPP-20012:** two-handle controller "Type 2", purple skeleton (Sony PlayStation 2)
+- **TCPP-20014:** Ryojōhen controller (Sony PlayStation 2)
+- **MTC:** Multi Train Controller (Sony PlayStation 2)
+- **ZKNS-001:** one-handle controller (Nintendo Switch)
 
 ### DGC-255
 
@@ -34,7 +37,7 @@ Internally, it is a HID-compliant joystick with two axes and 6 buttons (the hand
 | **Product ID**              | 0x0003                                    |
 | **Serial number**           | TCPP20009                                 |
 | **USB standard descriptor** | Unavailable                               |
-| **HID report descriptor**   | [Link](dgoc44u_hid-report-descriptor.txt) |
+| **HID report descriptor**   | [Link](descriptors/dgoc44u_hid-report-descriptor.txt) |
 
 The controller sends reports to the host (PC) formed by 6 bytes:
 
@@ -77,7 +80,7 @@ Internally, it is a HID device with a vendor-specific class.
 | **Vendor ID**               | 0x0AE4                                    |
 | **Product ID**              | 0x0004                                    |
 | **Serial number**           | TCPP20010                                 |
-| **USB standard descriptor** | [Link](tcpp20009_standard-descriptor.txt) |
+| **USB standard descriptor** | [Link](descriptors/tcpp20009_standard-descriptor.txt) |
 | **HID report descriptor**   | Unavailable                               |
 
 #### Input
@@ -148,7 +151,7 @@ Internally, it is a HID device with a vendor-specific class.
 | **Vendor ID**               | 0x0AE4                                    |
 | **Product ID**              | 0x0005                                    |
 | **Serial number**           | TCPP20011                                 |
-| **USB standard descriptor** | [Link](tcpp20011_standard-descriptor.txt) |
+| **USB standard descriptor** | [Link](descriptors/tcpp20011_standard-descriptor.txt) |
 | **HID report descriptor**   | Unavailable                               |
 
 #### Input
@@ -225,7 +228,7 @@ Internally, it is a HID device with a vendor-specific class.
 | **Vendor ID**               | 0x0AE4                                    |
 | **Product ID**              | 0x0007                                    |
 | **Serial number**           | TCPP20014                                 |
-| **USB standard descriptor** | [Link](tcpp20014_standard-descriptor.txt) |
+| **USB standard descriptor** | [Link](descriptors/tcpp20014_standard-descriptor.txt) |
 | **HID report descriptor**   | Unavailable                               |
 
 #### Input
@@ -289,16 +292,11 @@ Internally, it is a HID-compliant joystick mimicking a Nintendo Switch Pro Contr
 | **Vendor ID**               | 0x0F0D                                    |
 | **Product ID**              | 0x00C1                                    |
 | **Serial number**           | *None*                                    |
-| **USB standard descriptor** | [Link](zkns001_standard-descriptor.txt)   |
-| **HID report descriptor**   | [Link](zkns001_hid-report-descriptor.txt) |
+| **USB standard descriptor** | [Link](descriptors/zkns001_standard-descriptor.txt)   |
+| **HID report descriptor**   | [Link](descriptors/zkns001_hid-report-descriptor.txt) |
 
 The power/brake handle notches are reported in the Y axis of the left stick. There are no transition values between notches. In addition, when the handle is set to **Emergency**, **ZL** is pressed.
 
 | Emergency | B8   | B7   | B6   | B5   | B4   | B3   | B2   | B1   | N    | P1   | P2   | P3   | P4   | P5   |
 |:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0x00      | 0x05 | 0x13 | 0x20 | 0x2E | 0x3C | 0x49 | 0x57 | 0x65 | 0x80 | 0x9F | 0xB7 | 0xCE | 0xE6 | 0xFF |
-
-## Acknowledgements
-
-- [GMMan](https://github.com/GMMan), who has provided the internal details of the DGOC-44U.
-- [TheYamanote](https://twitter.com/The_Yamanote), who has helped with the TCPP-20009.
