@@ -10,6 +10,15 @@ collapsibleMenu = true
 disableLandingPageButton = true
 disableShortcutsTitle=true
 
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
