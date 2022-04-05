@@ -18,6 +18,8 @@ The codes emulate a Type 2 controller. You will need to connect the controller a
 - Port 1: Dualshock or Dualshock 2 (D-pad, **SELECT**)
 - Port 2: PlayStation controller (handles and buttons, **SELECT** is mapped to **D**)
 
+**Note:** Other controllers may be used like this with an adapter (Titan One/Two + Brook/PADEMU). In this case, buttons are not remapped and the Dualshock on port 1 is not needed. [More information](https://github.com/MarcRiera/ddgo-scripts/tree/main/Densha%20de%20GO!%20(PS1-PS2))
+
 Each game requires a specific cheat code:
 
 - [Densha de GO! Ryojouhen](cheats/controller-cheat_ryojouhen.txt)
