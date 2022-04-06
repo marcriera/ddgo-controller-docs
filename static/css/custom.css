@@ -1,0 +1,9 @@
+#body .flex-block-wrapper {
+    max-width: 100%;
+}
+
+.flex-block-wrapper table {
+    overflow-x: auto;
+    white-space: wrap;
+    width: 100%;
+}
