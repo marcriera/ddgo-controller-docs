@@ -1,0 +1,19 @@
+ <table>
+  <tr>
+    <td rowspan="4"><img src="cover.jpg"/></td>
+    <td><strong>Name</strong></td>
+    <td>{{ (index .Site.Data.games "wii_shinkansen").name }}</td>
+  </tr>
+  <tr>
+    <td><strong>Japanese name</strong></td>
+    <td>{{ (index .Site.Data.games "wii_shinkansen").namejp }}</td>
+  </tr>
+  <tr>
+    <td><strong>Release date</strong></td>
+    <td>{{ (index .Site.Data.games "wii_shinkansen").date }}</td>
+  </tr>
+  <tr>
+    <td><strong>Serial code</strong></td>
+    <td>{{ (index .Site.Data.games "wii_shinkansen").code }}</td>
+  </tr>
+</table> 
