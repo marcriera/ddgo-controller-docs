@@ -10,7 +10,7 @@ themeVariant = [ "relearn-light", "relearn-dark" ]
 collapsibleMenu = true
 disableLandingPageButton = true
 disableShortcutsTitle=true
-custom_css = [ "css/custom.css" ]
+custom_css = [ "css/custom.css", "css/compatibility.css" ]
 
 [markup]
   [markup.goldmark]

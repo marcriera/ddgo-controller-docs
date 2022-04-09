@@ -1,0 +1,23 @@
+slph00051:
+  name: "Two-handle controller (PlayStation)"
+  date: 2007-03-01
+  code: "SLPH-00051"
+  ref: "/controllers/classic/slph00051"
+
+tcpp20001:
+  name: "Single-handle controller (PlayStation)"
+  date: 2007-03-01
+  code: "TCPP-20001"
+  ref: "/controllers/classic/tcpp20001"
+
+tcpp20002:
+  name: "Mamecon controller (PlayStation)"
+  date: 2007-03-01
+  code: "TCPP-20002"
+  ref: "/controllers/classic/tcpp20002"
+
+tcpp20017:
+  name: "Shinkansen controller (Wii)"
+  date: 2007-03-01
+  code: "TCPP-20017"
+  ref: "/controllers/wii/tcpp20017"

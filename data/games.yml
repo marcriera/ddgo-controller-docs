@@ -1,0 +1,18 @@
+ps1_densha:
+  name: "Densha de GO!"
+  namejp: "電車でGO！"
+  date: 1997-12-18
+  code: "SCPS-45166"
+  controllers:
+    - model: slph00051
+    - model: tcpp20001
+    - model: tcpp20002
+
+wii_shinkansen:
+  name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"
+  namejp: "電車でGO！新幹線EX 山陽新幹線編"
+  date: 2007-03-01
+  code: "RVL-P-RG4J"
+  cover: "wii_shinkansen.jpg"
+  controllers:
+    - model: tcpp20017
