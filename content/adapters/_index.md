@@ -1,6 +1,6 @@
 ---
 title: "Adapters and hacks"
-weight: 3
+weight: 4
 ---
 
 Besides the official compatibility, it is possible to use unofficial adapters, tools and hacks to use controllers with games which is unsupported officially.
