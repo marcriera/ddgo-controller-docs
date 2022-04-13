@@ -53,7 +53,8 @@ wii_shinkansen:
   namejp: "電車でGO！新幹線EX 山陽新幹線編"
   date: 2007-03-01
   code: "RVL-P-RG4J"
-  cover: "wii_shinkansen.jpg"
+  image: "wii_shinkansen.jpg"
+  ref: "/software/wii/shinkansen"
   controllers:
     - model: tcpp20017
 

@@ -4,6 +4,5 @@
 
 .flex-block-wrapper table {
     overflow-x: auto;
-    white-space: wrap;
     width: 100%;
 }

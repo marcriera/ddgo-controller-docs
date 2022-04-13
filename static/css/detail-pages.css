@@ -1,3 +1,9 @@
+table #image img {
+    margin: 0;
+    max-width: 190px;
+    max-height: 190px;
+}
+
 table #native {
     background-color: rgba(189,233,186,.35);
 }

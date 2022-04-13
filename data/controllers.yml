@@ -86,6 +86,7 @@ tcpp20017:
   name: "Shinkansen controller (Nintendo Wii)"
   date: 2007-03-01
   code: "TCPP-20017"
+  image: "tcpp20017.jpg"
   ref: "/controllers/wii/tcpp20017"
 
 zkns001:

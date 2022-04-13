@@ -11,7 +11,7 @@ collapsibleMenu = true
 disableLandingPageButton = true
 disableShortcutsTitle=true
 disableNextPrev = true
-custom_css = [ "css/custom.css", "css/compatibility.css" ]
+custom_css = [ "css/custom.css", "css/detail-pages.css" ]
 
 [markup]
   [markup.goldmark]
@@ -19,9 +19,17 @@ custom_css = [ "css/custom.css", "css/compatibility.css" ]
       unsafe = true
 
 
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Acknowledgements"
+url = "/acknowledgements"
+weight = 1
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
-identifier = "ds"
-url = "https://github.com/MarcRiera/ddgo-controller-docs"
+name = "<i class='fas fa-fw fa-bookmark'></i> References"
+url = "/references"
 weight = 1
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repository"
+url = "https://github.com/MarcRiera/ddgo-controller-docs"
+weight = 3

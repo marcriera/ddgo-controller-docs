@@ -1,8 +1,8 @@
-## Software details
+## Overview
 
 <table>
   <tr>
-    <td rowspan="5">{{ if (index .Site.Data.software (.Get 0)).cover}}<img src="/images/covers/{{ (index .Site.Data.software (.Get 0)).cover }}"/>{{ end }}</td>
+    <td rowspan="5" id="image">{{ if (index .Site.Data.software (.Get 0)).image}}<img src="/images/software/{{ (index .Site.Data.software (.Get 0)).image }}"/>{{ end }}</td>
     <td><strong>Name</strong></td>
     <td>{{ (index .Site.Data.software (.Get 0)).name }}</td>
   </tr>
@@ -44,7 +44,7 @@
   </tr>
   {{ range (index .Site.Data.software (.Get 0)).controllers }}
   <tr>
-    <td>{{ (index $.Site.Data.controllers .model).name }}</td>
+    <td><a href="{{ (index $.Site.Data.controllers .model).ref }}">{{ (index $.Site.Data.controllers .model).name }}</a></td>
     <td id="{{ if or .unofficial .partial }}partial{{ else }}native{{ end }}">{{ if .unofficial }}Unofficial{{ else if .partial }}Partial{{ else }}Native{{ end }}</td>
     <td>{{ .notes }}</td>
   </tr>

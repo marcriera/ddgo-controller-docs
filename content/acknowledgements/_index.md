@@ -1,6 +1,7 @@
 ---
 title: "Acknowledgements"
-weight: 9
+_build:
+  list: never
 ---
 
 - [GMMan](https://github.com/GMMan), who has provided the internal details of the DGOC-44U and has conducted extensive research on the Densha de GO! Plug and Play.
