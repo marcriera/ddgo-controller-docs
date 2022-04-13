@@ -44,7 +44,7 @@
   </tr>
   {{ range (index .Site.Data.software (.Get 0)).controllers }}
   <tr>
-    <td>{{ (index $.Site.Data.controllers .model).code }}: {{ (index $.Site.Data.controllers .model).name }}</td>
+    <td>{{ (index $.Site.Data.controllers .model).name }}</td>
     <td id="{{ if or .unofficial .partial }}partial{{ else }}native{{ end }}">{{ if .unofficial }}Unofficial{{ else if .partial }}Partial{{ else }}Native{{ end }}</td>
     <td>{{ .notes }}</td>
   </tr>

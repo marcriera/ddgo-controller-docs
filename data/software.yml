@@ -4,9 +4,9 @@ ps1_densha:
   date: 1997-12-18
   code: "SCPS-45166"
   controllers:
-    - model: slph00051
-    - model: tcpp20001
     - model: tcpp20002
+    - model: tcpp20001
+    - model: slph00051
 
 ps1_densha2:
   name: "Densha de GO! 2"
@@ -14,9 +14,9 @@ ps1_densha2:
   date: 1999-03-18
   code: "SLPM-86142"
   controllers:
-    - model: slph00051
-    - model: tcpp20001
     - model: tcpp20002
+    - model: tcpp20001
+    - model: slph00051
 
 ps1_pro:
   name: "Densha de GO! Professional"
@@ -24,9 +24,9 @@ ps1_pro:
   date: 1999-12-09
   code: "SLPM-86378"
   controllers:
-    - model: slph00051
-    - model: tcpp20001
     - model: tcpp20002
+    - model: tcpp20001
+    - model: slph00051
 
 ps1_nagoya:
   name: "Densha de GO! Nagoya Tetsudōhen"
@@ -34,9 +34,9 @@ ps1_nagoya:
   date: 2000-01-27
   code: "SLPM-86424"
   controllers:
-    - model: slph00051
-    - model: tcpp20001
     - model: tcpp20002
+    - model: tcpp20001
+    - model: slph00051
 
 ps1_kisha:
   name: "Kisha de GO!"
@@ -44,9 +44,9 @@ ps1_kisha:
   date: 2000-03-23
   code: "SLPM-86449"
   controllers:
-    - model: slph00051
-    - model: tcpp20001
     - model: tcpp20002
+    - model: tcpp20001
+    - model: slph00051
 
 wii_shinkansen:
   name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"
@@ -67,28 +67,28 @@ pc_openbve:
   name: "OpenBVE"
   date: 2009-03-23
   url: "https://openbve-project.net/"
-  notes: "Compatibility applies to version 1.8.2 or later"
+  notes: "Controllers are supported on version 1.8.2.0 or later via built-in input plugin."
   controllers:
-    - model: dgoc44u
-    - model: dgc255
-    - model: dyc288
-    - model: ohcpc01
-    - model: slph00051
+    - model: tcpp20002
       notes: "Requires USB adapter and calibration."
     - model: sotp031201
       partial: yes
       notes: "Only P5/B8 cassette."
-    - model: tc5175290
-      notes: "Requires USB adapter and calibration."
+    - model: zkns001
+    - model: dgc255
     - model: tcpp20001
       notes: "Requires USB adapter and calibration."
-    - model: tcpp20002
-      notes: "Requires USB adapter and calibration."
+    - model: dyc288
+    - model: tcpp20014
+    - model: ohcpc01
+    - model: tcpp20011
     - model: tcpp20003
       notes: "Requires USB adapter and calibration."
+    - model: dgoc44u
     - model: tcpp20004
       notes: "Requires USB adapter and calibration."
+    - model: slph00051
+      notes: "Requires USB adapter and calibration."
+    - model: tc5175290
+      notes: "Requires USB adapter and calibration."
     - model: tcpp20009
-    - model: tcpp20011
-    - model: tcpp20014
-    - model: zkns001
