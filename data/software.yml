@@ -62,13 +62,34 @@ pc_bve:
   name: "BVE Trainsim"
   date: 2011-09-05
   url: "https://bvets.net/en/"
-  notes: "Compatibility applies to version 5 or later"
+  notes: "Compatibility applies to version 5 or later."
+  controllers:
+    - model: tcpp20002
+      notes: "Requires USB adapter."
+    - model: sotp031201
+    - model: zkns001
+    - model: dgc255
+    - model: tcpp20001
+      notes: "Requires USB adapter."
+    - model: dyc288
+    - model: tcpp20014
+    - model: ohcpc01
+    - model: tcpp20003
+      notes: "Requires USB adapter."
+    - model: dgoc44u
+    - model: tcpp20004
+      notes: "Requires USB adapter."
+    - model: slph00051
+      notes: "Requires USB adapter."
+    - model: tc5175290
+      notes: "Requires USB adapter."
+    - model: tcpp20009
 
 pc_openbve:
   name: "OpenBVE"
   date: 2009-03-23
   url: "https://openbve-project.net/"
-  notes: "Controllers are supported on version 1.8.2.0 or later via built-in input plugin."
+  notes: "Controllers are supported on version 1.8.2.0 or later via built-in input plugins."
   controllers:
     - model: tcpp20002
       notes: "Requires USB adapter and calibration."

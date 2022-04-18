@@ -15,6 +15,7 @@ dyc288:
   date: 2005-12-01
   code: "DYC-288"
   ref: "/controllers/usb/dyc288"
+  notes: "Also packaged with serial code DRC-184."
 
 ohcpc01:
   name: "Sangying one handle controller (PC)"
@@ -69,6 +70,7 @@ tcpp20009:
   date: 2001-03-15
   code: "TCPP-20009"
   ref: "/controllers/usb/tcpp20009"
+  notes: "Also available in purple skeleton colour (TCPP-20012)."
 
 tcpp20011:
   name: "Shinkansen controller (Sony PlayStation 2)"
@@ -93,4 +95,5 @@ zkns001:
   name: "One handle controller (Nintendo Switch)"
   date: 2021-08-05
   code: "ZKNS-001"
+  image: "zkns001.jpg"
   ref: "/controllers/usb/zkns001"
