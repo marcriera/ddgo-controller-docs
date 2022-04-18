@@ -1,6 +1,7 @@
 ---
 title: "USB"
 weight: 3
+alwaysopen: false
 ---
 
 The information in this section applies to the following controllers:

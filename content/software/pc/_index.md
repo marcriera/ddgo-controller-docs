@@ -1,3 +1,4 @@
 ---
 title: "PC"
+alwaysopen: false
 ---

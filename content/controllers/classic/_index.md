@@ -1,6 +1,7 @@
 ---
 title: "Classic consoles"
 weight: 1
+alwaysopen: false
 ---
 
 The information in this section applies to the following controllers:

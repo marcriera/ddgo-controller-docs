@@ -4,6 +4,12 @@ dgc255:
   code: "DGC-255"
   ref: "/controllers/usb/dgc255"
 
+dgoc44:
+  name: "Two handle controller, serial port (PC)"
+  date: 1999-03-18
+  code: "DGOC-44"
+  ref: "/controllers/serial/dgoc44"
+
 dgoc44u:
   name: "Two handle controller (PC)"
   date: 2001-06-15
