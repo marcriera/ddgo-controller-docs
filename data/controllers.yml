@@ -1,6 +1,6 @@
 dgc255:
   name: "One handle controller (PC)"
-  date: 2005-07-14
+  date: 2004-12-17
   code: "DGC-255"
   ref: "/controllers/usb/dgc255"
 
@@ -18,7 +18,7 @@ dgoc44u:
 
 dyc288:
   name: "Ryojōhen controller (PC)"
-  date: 2005-12-01
+  date: 2003-06-05
   code: "DYC-288"
   ref: "/controllers/usb/dyc288"
   notes: "Also packaged with serial code DRC-184."
