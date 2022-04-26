@@ -1,6 +1,6 @@
 ---
 title: "Densha de GO! 3 Tsūkin-hen"
-weight: 1
+weight: 6
 ---
 
-{{% software-page "ps2_densha3" %}}
+{{% software-page "pc_densha3" %}}
