@@ -1,3 +1,112 @@
+pc_densha:
+  name: "Densha de GO!"
+  namejp: "電車でGO！"
+  date: 1999-04-23
+  ref: "/software/pc/densha"
+  controllers:
+    - model: dgc255
+      notes: "Only republished version"
+    - model: dgoc44
+    - model: dgoc44u
+      notes: "Only republished version"
+
+pc_densha2:
+  name: "Densha de GO! 2"
+  namejp: "電車でGO！2"
+  date: 1999-03-18
+  ref: "/software/pc/densha2"
+  controllers:
+    - model: dgc255
+      notes: "Only republished version"
+    - model: dgoc44
+    - model: dgoc44u
+      notes: "Only republished version"
+
+pc_pro:
+  name: "Densha de GO! Professional"
+  namejp: "電車でGO！プロフェッショナル仕様"
+  date: 2001-06-15
+  ref: "/software/pc/pro"
+  controllers:
+    - model: dgc255
+    - model: dgoc44
+    - model: dgoc44u
+      notes: "Only republished version"
+
+pc_nagoya:
+  name: "Densha de GO! Nagoya Tetsudōhen"
+  namejp: "電車でGO！名古屋鉄道編"
+  date: 2000-12-01
+  ref: "/software/pc/nagoya"
+  controllers:
+    - model: dgc255
+      notes: "Only republished version"
+    - model: dgoc44
+    - model: dgoc44u
+      notes: "Only republished version"
+
+pc_kisha:
+  name: "Kisha de GO!"
+  namejp: "汽車でGO！"
+  date: 2001-02-09
+  ref: "/software/pc/kisha"
+  controllers:
+    - model: dgc255
+      notes: "Only republished version"
+    - model: dgoc44
+    - model: dgoc44u
+      notes: "Only republished version"
+
+pc_densha3:
+  name: "Densha de GO! 3"
+  namejp: "電車でGO！3"
+  date: 2002-03-21
+  ref: "/software/pc/densha3"
+  controllers:
+    - model: dgc255
+    - model: dgoc44
+    - model: dgoc44u
+
+pc_shinkansen:
+  name: "Densha de GO! Shinkansen San'yō Shinkansen-hen"
+  namejp: "電車でGO！新幹線 山陽新幹線編"
+  date: 2002-12-13
+  ref: "/software/pc/shinkansen"
+  controllers:
+    - model: dgc255
+    - model: dgoc44
+    - model: dgoc44u
+
+pc_ryojouhen:
+  name: "Densha de GO! Ryojōhen"
+  namejp: "電車でGO!旅情編"
+  date: 2003-06-05
+  ref: "/software/pc/ryojouhen"
+  controllers:
+    - model: dgc255
+    - model: dyc288
+    - model: dgoc44u
+
+pc_pro2:
+  name: "Densha de GO! Professional 2"
+  namejp: "電車でGO!プロフェッショナル2"
+  date: 2003-04-30
+  ref: "/software/pc/pro2"
+  controllers:
+    - model: dgc255
+    - model: dyc288
+    - model: dgoc44u
+
+pc_final:
+  name: "Densha de GO! Final"
+  namejp: "電車でGO! FINAL"
+  date: 2004-12-17
+  ref: "/software/pc/final"
+  controllers:
+    - model: dgc255
+    - model: dyc288
+    - model: dgoc44u
+
 ps1_densha:
   name: "Densha de GO!"
   namejp: "電車でGO！"

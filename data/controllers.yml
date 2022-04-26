@@ -5,10 +5,10 @@ dgc255:
   ref: "/controllers/usb/dgc255"
 
 dgoc44:
-  name: "Two handle controller, serial port (PC)"
+  name: "Two handle controller, game port (PC)"
   date: 1999-03-18
   code: "DGOC-44"
-  ref: "/controllers/serial/dgoc44"
+  ref: "/controllers/gameport/dgoc44"
 
 dgoc44u:
   name: "Two handle controller (PC)"
