@@ -20,27 +20,4 @@
   </tr>
 </table>
 
-## Supported software (WIP)
-
-<table>
-  <tr>
-    <th>Software</th>
-    <th>Support</th>
-    <th>Notes</th>
-  </tr>
-  {{ range sort .Site.Data.software "name" }}
-  {{ $software_name := .name }}
-  {{ $software_ref := .ref }}
-  {{ range .controllers }}
-  {{ if eq .model ($.Get 0) }}
-  <tr>
-    <td><a href="{{ $software_ref }}">{{ $software_name }}</a></td>
-    <td id="{{ if or .unofficial .partial }}partial{{ else }}native{{ end }}">{{ if .unofficial }}Unofficial{{ else if .partial }}Partial{{ else }}Native{{ end }}</td>
-    <td>{{ .notes }}</td>
-  </tr>
-  {{ end }}
-  {{ end }}
-  {{ end }}
-</table>
-
 ## Technical details

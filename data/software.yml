@@ -173,6 +173,7 @@ ps1_nagoya:
   namejp: "電車でGO！名古屋鉄道編"
   date: 2000-01-27
   code: "SLPM-86424"
+  image: "ps2_nagoya.jpg"
   ref: "/software/ps1/nagoya"
   controllers:
     - model: tcpp20002
@@ -195,6 +196,7 @@ ps2_densha3:
   namejp: "電車でGO！3通勤編"
   date: 2001-03-15
   code: "SLPM-62049"
+  image: "ps2_densha3.jpg"
   ref: "/software/ps2/densha3"
   controllers:
     - model: tcpp20002
@@ -210,6 +212,7 @@ ps2_shinkansen:
   namejp: "電車でGO！新幹線 山陽新幹線編"
   date: 2001-09-20
   code: "SLPM-65039"
+  image: "ps2_shinkansen.jpg"
   ref: "/software/ps2/shinkansen"
   controllers:
     - model: tcpp20002
@@ -226,6 +229,7 @@ ps2_ryojouhen:
   namejp: "電車でGO!旅情編"
   date: 2002-07-25
   code: "SLPM-65148"
+  image: "ps2_ryojouhen.jpg"
   ref: "/software/ps2/ryojouhen"
   controllers:
     - model: tcpp20002
@@ -249,6 +253,7 @@ ps2_pro2:
   namejp: "電車でGO!プロフェッショナル2"
   date: 2003-02-27
   code: "SLPM-65243"
+  image: "ps2_pro2.jpg"
   ref: "/software/ps2/pro2"
   controllers:
     - model: tcpp20002
@@ -272,6 +277,7 @@ ps2_final:
   namejp: "電車でGO! FINAL"
   date: 2004-05-27
   code: "SLPM-65590"
+  image: "ps2_final.jpg"
   ref: "/software/ps2/final"
   controllers:
     - model: tcpp20002
@@ -290,15 +296,13 @@ ps2_final:
       adapter: ps2_cheats
     - model: tcpp20009
 
-wii_shinkansen:
-  name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"
-  namejp: "電車でGO！新幹線EX 山陽新幹線編"
-  date: 2007-03-01
-  code: "RVL-P-RG4J"
-  image: "wii_shinkansen.jpg"
-  ref: "/software/wii/shinkansen"
-  controllers:
-    - model: tcpp20017
+ps4_yamanote:
+  name: "Densha de GO! Hashirō Yamanote‑sen"
+  namejp: "電車でGO!! はしろう山手線"
+  date: 2020-12-03
+  code: "PLJM-16643"
+  image: "ps4_yamanote.jpg"
+  ref: "/software/ps4/yamanote"
 
 pc_bve:
   name: "BVE Trainsim"
@@ -356,3 +360,23 @@ pc_openbve:
     - model: tc5175290
       notes: "Requires USB adapter and calibration."
     - model: tcpp20009
+
+switch_yamanote:
+  name: "Densha de GO! Hashirō Yamanote‑sen"
+  namejp: "電車でGO!! はしろう山手線"
+  date: 2021-03-18
+  code: "HAC-P-A2BGA"
+  image: "switch_yamanote.jpg"
+  ref: "/software/switch/yamanote"
+  controllers:
+    - model: zkns001
+
+wii_shinkansen:
+  name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"
+  namejp: "電車でGO！新幹線EX 山陽新幹線編"
+  date: 2007-03-01
+  code: "RVL-P-RG4J"
+  image: "wii_shinkansen.jpg"
+  ref: "/software/wii/shinkansen"
+  controllers:
+    - model: tcpp20017

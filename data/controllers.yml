@@ -29,17 +29,26 @@ ohcpc01:
   code: "OHC-PC01"
   ref: "/controllers/usb/ohcpc01"
 
+pnp:
+  name: "Densha de GO! Plug and Play"
+  date: 2018-02-08
+  image: "pnp.jpg"
+  ref: "/controllers/standalone/pnp"
+
 sotp031201:
   name: "Multi Train Controller (Sony PlayStation 2)"
   date: 2003-12-18
   code: "SOTP-031201"
+  image: "sotp031201.jpg"
   ref: "/controllers/usb/sotp031201"
+  notes: "Released with 4 cassettes: P4-B7, P4-B7 (without B1), P5-B5 and P5-B8. Additional cassettes sold separarely: P5-B7 and P13-B7."
 
 slph00051:
   name: "Two handle controller (Sony PlayStation)"
   date: 1997-12-18
   code: "SLPH-00051"
   ref: "/controllers/classic/slph00051"
+  notes: "Also available in golden colour (TCPP-20008)."
 
 tc5175290:
   name: "Two handle controller (Sega Saturn)"
