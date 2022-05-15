@@ -1,3 +1,10 @@
+cotm02001:
+  name: "Train Mascon (Sony PlayStation 2)"
+  date: 2002-10-31
+  code: "COTM-02001"
+  image: "cotm02001.jpg"
+  ref: "/controllers/usb/cotm02001"
+
 dgc255:
   name: "One handle controller (PC)"
   date: 2004-12-17
@@ -41,7 +48,7 @@ sotp031201:
   code: "SOTP-031201"
   image: "sotp031201.jpg"
   ref: "/controllers/usb/sotp031201"
-  notes: "Released with 4 cassettes: P4-B7, P4-B7 (without B1), P5-B5 and P5-B8. Additional cassettes sold separarely: P5-B7 and P13-B7."
+  notes: "Released with 4 cassettes: P4-B7, P4-B7 (without B1), P5-B5 and P5-B8. Additional cassettes sold separately: P5-B7 and P13-B7."
 
 slph00051:
   name: "Two handle controller (Sony PlayStation)"

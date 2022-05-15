@@ -201,8 +201,7 @@ ps2_densha3:
   controllers:
     - model: tcpp20002
     - model: sotp031201
-      partial: yes
-      notes: "Only P5/B8 cassette."
+      notes: "P5/B8 cassette."
     - model: tcpp20001
     - model: slph00051
     - model: tcpp20009
@@ -217,8 +216,7 @@ ps2_shinkansen:
   controllers:
     - model: tcpp20002
     - model: sotp031201
-      partial: yes
-      notes: "Only P5/B8 cassette."
+      notes: "P5/B8 cassette."
     - model: tcpp20001
     - model: tcpp20011
     - model: slph00051
@@ -236,8 +234,7 @@ ps2_ryojouhen:
       unofficial: yes
       adapter: ps2_cheats
     - model: sotp031201
-      partial: yes
-      notes: "Only P5/B8 cassette."
+      notes: "P5/B8 cassette."
     - model: tcpp20001
       unofficial: yes
       adapter: ps2_cheats
@@ -260,8 +257,7 @@ ps2_pro2:
       unofficial: yes
       adapter: ps2_cheats
     - model: sotp031201
-      partial: yes
-      notes: "Only P5/B8 cassette."
+      notes: "P5/B8 cassette."
     - model: tcpp20001
       unofficial: yes
       adapter: ps2_cheats
@@ -284,8 +280,7 @@ ps2_final:
       unofficial: yes
       adapter: ps2_cheats
     - model: sotp031201
-      partial: yes
-      notes: "Only P5/B8 cassette."
+      notes: "P5/B8 cassette."
     - model: tcpp20001
       unofficial: yes
       adapter: ps2_cheats
@@ -295,6 +290,69 @@ ps2_final:
       unofficial: yes
       adapter: ps2_cheats
     - model: tcpp20009
+
+ps2_trainyamanote:
+  name: "Train Simulator Real: THE Yamanote Line"
+  namejp: "Train Simulator Real THE 山手線"
+  date: 2001-10-04
+  code: "SCPS-15018"
+  ref: "/software_other/ps2/trainyamanote"
+  controllers:
+    - model: sotp031201
+      notes: "P5/B8 cassette."
+    - model: tcpp20009
+
+ps2_trainkeihin:
+  name: "Train Simulator Real: THE Keihin Electric Express Railway"
+  namejp: "Train Simulator Real THE 京浜急行"
+  date: 2002-10-31
+  code: "SCPS-15035"
+  ref: "/software_other/ps2/trainkeihin"
+  controllers:
+    - model: sotp031201
+      notes: "P5/B5 cassette."
+    - model: cotm02001
+
+ps2_trainmidosuji:
+  name: "Train Simulator: Midosuji Line"
+  namejp: "Train Simulator 御堂筋線"
+  date: 2003-10-30
+  code: "SLPM-65386"
+  ref: "/software_other/ps2/trainmidosuji"
+  controllers:
+    - model: sotp031201
+      notes: "P4/B7 (without B1) cassette."
+
+ps2_traindensha:
+  name: "Train Simulator ＋ Densha de GO!: Tokyu Line"
+  namejp: "Train Simulator+電車でGO! 東京急行編"
+  date: 2003-12-18
+  code: "SLPM-65472"
+  ref: "/software_other/ps2/traindensha"
+  controllers:
+    - model: sotp031201
+      notes: "P4/B7 cassette."
+
+ps2_trainshinkansen:
+  name: "Train Simulator: Kyūshū Shinkansen"
+  namejp: "Train Simulator 京成・都営浅草・京急線"
+  date: 2005-08-25
+  code: "SLPM-67006"
+  ref: "/software_other/ps2/trainshinkansen"
+  controllers:
+    - model: sotp031201
+      notes: "P5/B7, P13-B7 cassettes."
+
+ps2_trainkeitokei:
+  name: "Train Simulator: Keisei, Toei Asakusa, Keikyu Lines"
+  namejp: "Train Simulator 九州新幹線"
+  date: 2005-10-01
+  code: "SLPM-67007"
+  ref: "/software_other/ps2/trainkeitokei"
+  controllers:
+    - model: sotp031201
+      notes: "P5/B5, P13-B7 cassettes."
+    - model: cotm02001
 
 ps4_yamanote:
   name: "Densha de GO! Hashirō Yamanote‑sen"
@@ -309,6 +367,7 @@ pc_bve:
   date: 2011-09-05
   url: "https://bvets.net/en/"
   notes: "Compatibility applies to version 5 or later."
+  ref: "/software_other/pc/bve"
   controllers:
     - model: tcpp20002
       notes: "Requires USB adapter."
@@ -336,6 +395,7 @@ pc_openbve:
   date: 2009-03-23
   url: "https://openbve-project.net/"
   notes: "Controllers are supported on version 1.8.2.0 or later via built-in input plugins."
+  ref: "/software_other/pc/openbve"
   controllers:
     - model: tcpp20002
       notes: "Requires USB adapter and calibration."
@@ -360,6 +420,15 @@ pc_openbve:
     - model: tc5175290
       notes: "Requires USB adapter and calibration."
     - model: tcpp20009
+
+pc_traincrew:
+  name: "Train Crew"
+  date: 2021-09-30
+  url: "https://acty-soft.com/traincrew/"
+  ref: "/software_other/pc/traincrew"
+  controllers:
+    - model: zkns001
+    - model: ohcpc01
 
 switch_yamanote:
   name: "Densha de GO! Hashirō Yamanote‑sen"

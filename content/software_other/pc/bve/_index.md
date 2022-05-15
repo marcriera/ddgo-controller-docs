@@ -1,6 +1,6 @@
 ---
 title: "BVE Trainsim"
-weight: 98
+weight: 1
 ---
 
 {{% software-page "pc_bve" %}}

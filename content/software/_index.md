@@ -1,4 +1,4 @@
 ---
-title: "Software"
+title: "Main software"
 weight: 2
 ---

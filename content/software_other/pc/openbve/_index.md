@@ -1,6 +1,6 @@
 ---
 title: "OpenBVE"
-weight: 99
+weight: 2
 ---
 
 {{% software-page "pc_openbve" %}}
