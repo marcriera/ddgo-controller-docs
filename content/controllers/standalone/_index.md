@@ -2,8 +2,9 @@
 title: "Standalone"
 weight: 5
 alwaysopen: false
+chapter: true
 ---
 
-The information in this section applies to the following controllers:
+# Standalone controllers
 
-- **Densha de GO! Plug and Play**
+This section includes self-contained controllers with software included in them. Instead of connecting to a PC or console, they can be connected directly to a TV via HDMI.

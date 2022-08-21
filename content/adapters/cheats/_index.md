@@ -1,6 +1,6 @@
 ---
 title: "PlayStation 2 cheat codes"
-weight: 1
+weight: 3
 ---
 
 ## Overview
