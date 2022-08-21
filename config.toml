@@ -11,7 +11,6 @@ collapsibleMenu = true
 disableLandingPageButton = true
 disableShortcutsTitle=true
 disableNextPrev = true
-custom_css = [ "css/custom.css", "css/detail-pages.css" ]
 
 [markup]
   [markup.goldmark]
