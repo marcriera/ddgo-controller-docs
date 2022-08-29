@@ -1,6 +1,11 @@
 ## Overview
 
-<table>
+<table class="datatable">
+  <colgroup>
+    <col class="col-pic">
+    <col class="col-headers">
+    <col class="col-data">
+  </colgroup>
   <tr>
     <td rowspan="0" id="image">{{ if (index .Site.Data.controllers (.Get 0)).image}}<img src="/images/controllers/{{ (index .Site.Data.controllers (.Get 0)).image }}"/>{{ end }}</td>
     <td><strong>Name</strong></td>
@@ -22,7 +27,12 @@
 
 ## Supported software (WIP)
 
-<table>
+<table class="compattable">
+  <colgroup>
+    <col class="col-model">
+    <col class="col-support">
+    <col class="col-notes">
+  </colgroup>
   <tr>
     <th>Software</th>
     <th>Support</th>
@@ -31,12 +41,13 @@
   {{ range sort .Site.Data.software "name" }}
   {{ $software_name := .name }}
   {{ $software_ref := .ref }}
+  {{ $software_platform := .platform }}
   {{ range .controllers }}
   {{ if eq .model ($.Get 0) }}
   <tr>
-    <td><a href="{{ $software_ref }}">{{ $software_name }}</a></td>
+    <td><a href="{{ $software_ref }}">{{ $software_name }} ({{ index $.Site.Data.platforms $software_platform }})</a></td>
     <td id="{{ if or .unofficial .partial }}partial{{ else }}native{{ end }}">{{ if .unofficial }}Unofficial{{ else if .partial }}Partial{{ else }}Native{{ end }}</td>
-    <td>{{ .notes }}</td>
+    <td>{{ .notes }} {{ if .adapter }}<a href="{{ index $.Site.Data.adapters .adapter "ref" }}">{{ index $.Site.Data.adapters .adapter "notes" }}</a>{{ end }}</td>
   </tr>
   {{ end }}
   {{ end }}

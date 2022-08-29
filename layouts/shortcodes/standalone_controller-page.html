@@ -1,6 +1,11 @@
 ## Overview
 
-<table>
+<table class="datatable">
+  <colgroup>
+    <col class="col-pic">
+    <col class="col-headers">
+    <col class="col-data">
+  </colgroup>
   <tr>
     <td rowspan="0" id="image">{{ if (index .Site.Data.controllers (.Get 0)).image}}<img src="/images/controllers/{{ (index .Site.Data.controllers (.Get 0)).image }}"/>{{ end }}</td>
     <td><strong>Name</strong></td>

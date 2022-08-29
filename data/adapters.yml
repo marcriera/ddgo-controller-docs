@@ -1,2 +1,6 @@
 ps2_cheats:
   notes: "Requires use of cheat codes."
+  ref: "/adapters/cheats"
+bve_plugin:
+  notes: "Supported via input plugin."
+  ref: "/adapters/plugins"
