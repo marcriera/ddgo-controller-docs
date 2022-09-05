@@ -1,0 +1,121 @@
+cotm02001:
+  name: "Train Mascon (Sony PlayStation 2)"
+  date: 2002-10-31
+  code: "COTM-02001"
+  image: "cotm02001.jpg"
+  ref: "/controllers/usb/cotm02001"
+
+dgc255:
+  name: "One handle controller (PC)"
+  date: 2004-12-17
+  code: "DGC-255"
+  ref: "/controllers/usb/dgc255"
+
+dgoc44:
+  name: "Two handle controller, game port (PC)"
+  date: 1999-03-18
+  code: "DGOC-44"
+  ref: "/controllers/gameport/dgoc44"
+
+dgoc44u:
+  name: "Two handle controller (PC)"
+  date: 2001-06-15
+  code: "DGOC-44U"
+  ref: "/controllers/usb/dgoc44u"
+
+dyc288:
+  name: "Ryojōhen controller (PC)"
+  date: 2003-06-05
+  code: "DYC-288"
+  ref: "/controllers/usb/dyc288"
+  notes: "Also packaged with serial code DRC-184."
+
+ohcpc01:
+  name: "Sangying one handle controller (PC)"
+  date: 2018-02-28
+  code: "OHC-PC01"
+  ref: "/controllers/usb/ohcpc01"
+
+pnp:
+  name: "Densha de GO! Plug and Play"
+  date: 2018-02-08
+  image: "pnp.jpg"
+  ref: "/controllers/standalone/pnp"
+
+sotp031201:
+  name: "Multi Train Controller (Sony PlayStation 2)"
+  date: 2003-12-18
+  code: "SOTP-031201"
+  image: "sotp031201.jpg"
+  ref: "/controllers/usb/sotp031201"
+  notes: "Released with 4 cassettes: P4-B7, P4-B7 (without B1), P5-B5 and P5-B8. Additional cassettes sold separately: P5-B7 and P13-B7."
+
+slph00051:
+  name: "Two handle controller (Sony PlayStation)"
+  date: 1997-12-18
+  code: "SLPH-00051"
+  ref: "/controllers/classic/slph00051"
+  notes: "Also available in golden colour (TCPP-20008)."
+
+tc5175290:
+  name: "Two handle controller (Sega Saturn)"
+  date: 1998-10-01
+  code: "TC-5175290"
+  ref: "/controllers/classic/tc5175290"
+
+tcpp20001:
+  name: "One handle controller (Sony PlayStation)"
+  date: 1999-03-18
+  code: "TCPP-20001"
+  ref: "/controllers/classic/tcpp20001"
+
+tcpp20002:
+  name: "Mamecon (Sony PlayStation)"
+  date: 1999-03-11
+  code: "TCPP-20002"
+  ref: "/controllers/classic/tcpp20002"
+
+tcpp20003:
+  name: "Two handle controller (Nintendo 64)"
+  date: 1999-07-30
+  code: "TCPP-20003"
+  ref: "/controllers/classic/tcpp20003"
+
+tcpp20004:
+  name: "Two handle controller (Sega Dreamcast)"
+  date: 2000-01-20
+  code: "TCPP-20004"
+  ref: "/controllers/classic/tcpp20004"
+
+tcpp20009:
+  name: 'Two handle controller "Type 2" (Sony PlayStation 2)'
+  date: 2001-03-15
+  code: "TCPP-20009"
+  ref: "/controllers/usb/tcpp20009"
+  notes: "Also available in purple skeleton colour (TCPP-20012)."
+
+tcpp20011:
+  name: "Shinkansen controller (Sony PlayStation 2)"
+  date: 2001-09-20
+  code: "TCPP-20011"
+  ref: "/controllers/usb/tcpp20011"
+
+tcpp20014:
+  name: "Ryojōhen controller (Sony PlayStation 2)"
+  date: 2002-07-25
+  code: "TCPP-20014"
+  ref: "/controllers/usb/tcpp20014"
+
+tcpp20017:
+  name: "Shinkansen controller (Nintendo Wii)"
+  date: 2007-03-01
+  code: "TCPP-20017"
+  image: "tcpp20017.jpg"
+  ref: "/controllers/wii/tcpp20017"
+
+zkns001:
+  name: "One handle controller (Nintendo Switch)"
+  date: 2021-08-05
+  code: "ZKNS-001"
+  image: "zkns001.jpg"
+  ref: "/controllers/usb/zkns001"

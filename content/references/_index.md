@@ -1,6 +1,7 @@
 ---
 title: "References"
-weight: 10
+_build:
+  list: never
 ---
 
 - General information: <http://autotraintas.hariko.com>
