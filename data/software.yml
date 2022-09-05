@@ -391,6 +391,28 @@ ps4_yamanote:
   platform: ps4
   image: "ps4_yamanote.jpg"
   ref: "/software/ps4/yamanote"
+  controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: zkns001
+      unofficial: yes
+      adapter: titan
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
 
 ps4_japankyoto:
   name: "Japanese Rail Sim: Journey to Kyoto"
@@ -400,6 +422,25 @@ ps4_japankyoto:
   platform: ps4
   image: "ps4_japankyoto.jpg"
   ref: "/software_other/ps4/japankyoto"
+  controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: zkns001
+      unofficial: yes
+      adapter: titan
 
 pc_bve:
   name: "BVE Trainsim"
@@ -498,6 +539,9 @@ pc_traincrew:
   url: "https://acty-soft.com/traincrew/"
   ref: "/software_other/pc/traincrew"
   controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
     - model: zkns001
     - model: ohcpc01
 
@@ -510,7 +554,25 @@ switch_yamanote:
   image: "switch_yamanote.jpg"
   ref: "/software/switch/yamanote"
   controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
     - model: zkns001
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
 
 switch_japankyoto:
   name: "Japanese Rail Sim: Journey to Kyoto"
@@ -539,7 +601,25 @@ switch_japanakechi:
   image: "switch_japanakechi.jpg"
   ref: "/software_other/switch/japanakechi"
   controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
     - model: zkns001
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
 
 wii_shinkansen:
   name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"

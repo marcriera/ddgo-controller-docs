@@ -1,6 +1,7 @@
 ---
 title: "Compatibility chart"
 weight: 4
+hidden: true
 ---
 
 The following table lists the compatibility between each controller (first row) and each software (first column). Additional software compatible with the controllers is also listed. The column for the Multi Train Controller (MTC) specifies the supported cassettes. Scroll to the right to see the full table.

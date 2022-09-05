@@ -4,3 +4,6 @@ ps2_cheats:
 bve_plugin:
   notes: "Supported via input plugin."
   ref: "/adapters/plugins"
+titan:
+  notes: "Requires use of Titan One/Two device."
+  ref: "/adapters/titan"
