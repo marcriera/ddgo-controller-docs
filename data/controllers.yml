@@ -9,6 +9,7 @@ dgc255:
   name: "One handle controller (PC)"
   date: 2004-12-17
   code: "DGC-255"
+  image: "dgc255.jpg"
   ref: "/controllers/usb/dgc255"
 
 dgoc44:
@@ -67,6 +68,7 @@ tcpp20001:
   name: "One handle controller (Sony PlayStation)"
   date: 1999-03-18
   code: "TCPP-20001"
+  image: "tcpp20001.jpg"
   ref: "/controllers/classic/tcpp20001"
 
 tcpp20002:
