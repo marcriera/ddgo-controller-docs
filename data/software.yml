@@ -383,6 +383,28 @@ ps2_trainkeitokei:
       notes: "P5/B5, P13-B7 cassettes."
     - model: cotm02001
 
+ps3_railfanchicago:
+  name: "Railfan: Chicago Transit Authority Brown Line"
+  namejp: "レールファン"
+  date: 2006-12-20
+  code: "BLJM-60013"
+  platform: ps3
+  image: "ps3_railfanchicago.jpg"
+  ref: "/software_other/ps3/railfanchicago"
+  controllers:
+    - model: sotp031201
+      notes: "P5/B8 cassette."
+    - model: tcpp20009
+
+ps3_railfantaiwan:
+  name: "Railfan: Taiwan High Speed Rail"
+  namejp: "レールファン 台湾高鉄"
+  date: 2007-07-12
+  code: "BLJS-10012"
+  platform: ps3
+  image: "ps3_railfantaiwan.jpg"
+  ref: "/software_other/ps3/railfantaiwan"
+
 ps4_yamanote:
   name: "Densha de GO! Hashirō Yamanote‑sen"
   namejp: "電車でGO!! はしろう山手線"
