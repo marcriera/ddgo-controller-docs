@@ -243,6 +243,7 @@ var variants = {
 	},
 
 	download: function(data, mimetype, filename){
+		console.log( data );
 		var blob = new Blob([data], { type: mimetype });
 		var url = window.URL.createObjectURL(blob);
 		var a = document.createElement('a');
@@ -319,12 +320,6 @@ var variants = {
 		return this.normalizeColor( getComputedStyle( document.documentElement ).getPropertyValue( '--INTERNAL-'+c ) );
 	},
 
-	getColorProperty: function( c, read_style ){
-		var e = this.findColor( c );
-		var p = this.normalizeColor( read_style.getPropertyValue( '--'+c ) ).replace( '--INTERNAL-', '--' );
-		return p;
-	},
-
 	findLoadedStylesheet: function( id ){
 		var style = null;
 		for( var n = 0; n < document.styleSheets.length; ++n ){
@@ -343,8 +338,7 @@ var variants = {
 	},
 
 	changeColor: function( c, without_prompt ){
-		var with_prompt = !(without_prompt || false);
-
+		without_prompt = without_prompt || false;
 		var read_style = this.findLoadedStylesheet( 'custom-variant-style' );
 		var write_style = this.findLoadedStylesheet( 'variant-style' );
 		if( !read_style ){
@@ -352,40 +346,46 @@ var variants = {
 		}
 
 		var e = this.findColor( c );
-		var v = this.getColorProperty( c, read_style );
+		var p = this.normalizeColor( read_style.getPropertyValue( '--'+c ) ).replace( '--INTERNAL-', '--' );
+		var f = this.getColorValue( e.fallback );
+
+		var v = this.getColorValue( e.name );
+		if( v == f || v == this.normalizeColor(e.default) ){
+			v = '';
+		}
+		if( p ){
+			v = p;
+		}
+
 		var n = '';
-		if( !with_prompt ){
+		if( without_prompt ){
 			n = v;
 		}
 		else{
 			var t = c + '\n\n' + e.tooltip + '\n';
 			if( e.fallback ){
-				t += '\nInherits value "' + this.getColorValue(e.fallback) + '" from ' + e.fallback + ' if not set\n';
+				t += '\nInherits value "' + f + '" from ' + e.fallback + ' if not set\n';
 			}
-			else if( e.default ){
+			if( e.default ){
 				t += '\nDefaults to value "' + this.normalizeColor(e.default) + '" if not set\n';
 			}
 			n = prompt( t, v );
-			if( n === null ){
-				// user canceld operation
-				return;
-			}
 		}
 
 		if( n ){
-			// value set to specific value
 			n = this.normalizeColor( n ).replace( '--INTERNAL-', '--' ).replace( '--', '--INTERNAL-' );
-			if( !with_prompt || n != v ){
+			if( without_prompt || n != v ){
 				write_style.setProperty( '--'+c, n );
 			}
+			if( !without_prompt ){
+				this.saveCustomVariant();
+			}
 		}
-		else{
-			// value emptied, so delete it
+		else if( n !== null){
 			write_style.removeProperty( '--'+c );
-		}
-
-		if( with_prompt ){
-			this.saveCustomVariant();
+			if( !without_prompt ){
+				this.saveCustomVariant();
+			}
 		}
 	},
 
@@ -396,28 +396,28 @@ var variants = {
 		return f;
 	},
 
-	generateColorVariable: function( e, read_style ){
+	generateColorVariable: function( e ){
 		var v = '';
-		var gen = this.getColorProperty( e.name, read_style );
+		var gen = true;
+		if( e.fallback ){
+			f = this.findColor( e.fallback );
+			gen = this.getColorValue(f.name) != this.getColorValue(e.name);
+		}
+		else if( e.default ){
+			gen = this.normalizeColor(e.default) != this.getColorValue(e.name);
+		}
 		if( gen ){
-			v += '  --' + e.name + ': ' + gen + '; /* ' + e.tooltip + ' */\n';
+			v += '  --' + e.name + ': ' + this.getColorValue(e.name) + '; /* ' + e.tooltip + ' */\n';
 		}
 		return v;
 	},
 
 	generateStylesheet: function(){
-		var read_style = this.findLoadedStylesheet( 'custom-variant-style' );
-		var write_style = this.findLoadedStylesheet( 'variant-style' );
-		if( !read_style ){
-			read_style = write_style;
-		}
-
 		var style =
 			'/* ' + this.customvariantname + ' */\n' +
 			':root {\n' +
-			this.variantvariables.reduce( function( a, e ){ return a + this.generateColorVariable( e, read_style ); }.bind( this ), '' ) +
+			this.variantvariables.sort( function( l, r ){ return l.name.localeCompare(r.name); } ).reduce( function( a, e ){ return a + this.generateColorVariable( e ); }.bind( this ), '' ) +
 			'}\n';
-		console.log( style );
 		return style;
 	},
 
@@ -517,14 +517,12 @@ var variants = {
 	},
 
 	variantvariables: [
-		{ name: 'PRIMARY-color',                         group: 'content',       fallback: 'MENU-HEADER-BG-color',        tooltip: 'brand primary color', },
-		{ name: 'SECONDARY-color',                       group: 'content',       fallback: 'MAIN-LINK-color',             tooltip: 'brand secondary color', },
-
 		{ name: 'MAIN-TEXT-color',                       group: 'content',        default: '#101010',                     tooltip: 'text color of content and h1 titles', },
-		{ name: 'MAIN-LINK-color',                       group: 'content',       fallback: 'SECONDARY-color',             tooltip: 'link color of content', },
+		{ name: 'MAIN-LINK-color',                       group: 'content',        default: '#486ac9',                     tooltip: 'link color of content', },
 		{ name: 'MAIN-LINK-HOVER-color',                 group: 'content',       fallback: 'MAIN-LINK-color',             tooltip: 'hoverd link color of content', },
+		{ name: 'MAIN-ANCHOR-color',                     group: 'content',       fallback: 'MAIN-LINK-HOVER-color',       tooltip: 'anchor color of titles', },
 		{ name: 'MAIN-BG-color',                         group: 'content',        default: '#ffffff',                     tooltip: 'background color of content', },
-		{ name: 'TAG-BG-color',                          group: 'content',       fallback: 'PRIMARY-color',               tooltip: 'tag color', },
+		{ name: 'TAG-BG-color',                          group: 'content',       fallback: 'MENU-HEADER-BG-color',        tooltip: 'tag color', },
 
 		{ name: 'MAIN-TITLES-TEXT-color',                group: 'headings',       default: '#4a4a4a',                     tooltip: 'text color of h2-h6 titles and transparent box titles', },
 		{ name: 'MAIN-TITLES-H1-color',                  group: 'headings',      fallback: 'MAIN-TEXT-color',             tooltip: 'text color of h1 titles', },
@@ -557,7 +555,7 @@ var variants = {
 		{ name: 'MERMAID-theme',                         group: '3rd party',      default: 'default',                     tooltip: 'name of the default Mermaid theme for this variant, can be overridden in config.toml', },
 		{ name: 'SWAGGER-theme',                         group: '3rd party',      default: 'light',                       tooltip: 'name of the default Swagger theme for this variant, can be overridden in config.toml', },
 
-		{ name: 'MENU-HEADER-BG-color',                  group: 'header',        fallback: 'PRIMARY-color',               tooltip: 'background color of menu header', },
+		{ name: 'MENU-HEADER-BG-color',                  group: 'header',         default: '#7dc903',                     tooltip: 'background color of menu header', },
 		{ name: 'MENU-HEADER-BORDER-color',              group: 'header',        fallback: 'MENU-HEADER-BG-color',        tooltip: 'separator color of menu header', },
 		{ name: 'MENU-HOME-LINK-color',                  group: 'header',         default: '#323232',                     tooltip: 'home button color if configured', },
 		{ name: 'MENU-HOME-LINK-HOVER-color',            group: 'header',         default: '#808080',                     tooltip: 'hoverd home button color if configured', },
@@ -567,12 +565,12 @@ var variants = {
 
 		{ name: 'MENU-SECTIONS-BG-color',                group: 'sections',       default: '#282828',                     tooltip: 'background of the menu; this is NOT just a color value but can be a complete CSS background definition including gradients, etc.', },
 		{ name: 'MENU-SECTIONS-ACTIVE-BG-color',         group: 'sections',       default: 'rgba( 0, 0, 0, .166 )',       tooltip: 'background color of the active menu section', },
-		{ name: 'MENU-SECTIONS-LINK-color',              group: 'sections',       default: '#bababa',                     tooltip: 'link color of menu topics', },
-		{ name: 'MENU-SECTIONS-LINK-HOVER-color',        group: 'sections',      fallback: 'MENU-SECTIONS-LINK-color',    tooltip: 'hoverd link color of menu topics', },
 		{ name: 'MENU-SECTION-ACTIVE-CATEGORY-color',    group: 'sections',       default: '#444444',                     tooltip: 'text color of the displayed menu topic', },
 		{ name: 'MENU-SECTION-ACTIVE-CATEGORY-BG-color', group: 'sections',      fallback: 'MAIN-BG-color',               tooltip: 'background color of the displayed menu topic', },
+		{ name: 'MENU-SECTIONS-LINK-color',              group: 'sections',       default: '#bababa',                     tooltip: 'link color of menu topics', },
+		{ name: 'MENU-SECTIONS-LINK-HOVER-color',        group: 'sections',      fallback: 'MENU-SECTIONS-LINK-color',    tooltip: 'hoverd link color of menu topics', },
+		{ name: 'MENU-VISITED-color',                    group: 'sections',       default: '#506397',                     tooltip: 'icon color of visited menu topics if configured', },
 		{ name: 'MENU-SECTION-HR-color',                 group: 'sections',       default: '#606060',                     tooltip: 'separator color of menu footer', },
-		{ name: 'MENU-VISITED-color',                    group: 'sections',      fallback: 'SECONDARY-color',             tooltip: 'icon color of visited menu topics if configured', },
 
 		{ name: 'BOX-CAPTION-color',                     group: 'colored boxes',  default: 'rgba( 255, 255, 255, 1 )',    tooltip: 'text color of colored box titles', },
 		{ name: 'BOX-BG-color',                          group: 'colored boxes',  default: 'rgba( 255, 255, 255, .833 )', tooltip: 'background color of colored boxes', },
