@@ -7,7 +7,6 @@ canonifyURLs = true
 [params]
 disableSearch = true
 themeVariant = [ "relearn-light", "relearn-dark" ]
-collapsibleMenu = true
 disableLandingPageButton = true
 disableShortcutsTitle=true
 disableNextPrev = true
