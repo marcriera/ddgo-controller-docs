@@ -106,6 +106,7 @@ tcpp20014:
   name: "Ryojōhen controller (Sony PlayStation 2)"
   date: 2002-07-25
   code: "TCPP-20014"
+  image: "tcpp20014.jpg"
   ref: "/controllers/usb/tcpp20014"
 
 tcpp20017:
