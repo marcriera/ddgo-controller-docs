@@ -28,6 +28,7 @@ dyc288:
   name: "Ryojōhen controller (PC)"
   date: 2003-06-05
   code: "DYC-288"
+  image: "dyc288.jpg"
   ref: "/controllers/usb/dyc288"
   notes: "Also packaged with serial code DRC-184."
 

@@ -9,6 +9,6 @@ _build:
 
 ## Images
 
-- air_nith: DGC-255, TCPP-20014
+- air_nith: DGC-255, DYC-288, TCPP-20014
 - TheYamanote: TCPP-20001
 - Internet Games Database (IGDB)
