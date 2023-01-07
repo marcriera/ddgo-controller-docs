@@ -360,28 +360,30 @@ ps2_traindensha:
     - model: sotp031201
       notes: "P4/B7 cassette."
 
-ps2_trainshinkansen:
-  name: "Train Simulator: Kyūshū Shinkansen"
-  namejp: "Train Simulator 京成・都営浅草・京急線"
-  date: 2005-08-25
-  code: "SLPM-67006"
-  platform: ps2
-  ref: "/software_other/ps2/trainshinkansen"
-  controllers:
-    - model: sotp031201
-      notes: "P5/B7, P13-B7 cassettes."
-
 ps2_trainkeitokei:
   name: "Train Simulator: Keisei, Toei Asakusa, Keikyu Lines"
-  namejp: "Train Simulator 九州新幹線"
-  date: 2005-10-01
+  namejp: "Train Simulator 京成・都営浅草・京急線"
+  date: 2005-08-25
   code: "SLPM-67007"
   platform: ps2
   ref: "/software_other/ps2/trainkeitokei"
   controllers:
     - model: sotp031201
       notes: "P5/B5, P13-B7 cassettes."
+    - model: tcpp20011
     - model: cotm02001
+
+ps2_trainshinkansen:
+  name: "Train Simulator: Kyūshū Shinkansen"
+  namejp: "Train Simulator 九州新幹線"
+  date: 2005-10-01
+  code: "SLPM-67006"
+  platform: ps2
+  ref: "/software_other/ps2/trainshinkansen"
+  controllers:
+    - model: sotp031201
+      notes: "P5/B7, P13-B7 cassettes."
+    - model: tcpp20011
 
 ps3_railfanchicago:
   name: "Railfan: Chicago Transit Authority Brown Line"
