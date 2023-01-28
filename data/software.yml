@@ -360,7 +360,6 @@ ps2_trainmidosuji:
       notes: "Requires official USB adapter. Set power to 4 and brake to 6."
     - model: sotp031201
       notes: "P4/B7 (without B1) cassette."
-    - model: cotm02001
 
 ps2_traindensha:
   name: "Train Simulator ＋ Densha de GO!: Tokyu Line"
@@ -376,6 +375,7 @@ ps2_traindensha:
       notes: "Requires official USB adapter. Set power to 4 and brake to 5."
     - model: sotp031201
       notes: "P4/B7 cassette."
+    - model: cotm02001
 
 ps2_trainkeitokei:
   name: "Train Simulator: Keisei, Toei Asakusa, Keikyu Lines"
