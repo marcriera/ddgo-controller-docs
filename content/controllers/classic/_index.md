@@ -1,6 +1,5 @@
 ---
 title: "Classic consoles"
-weight: 1
 alwaysopen: false
 chapter: true
 ---

@@ -1,6 +1,5 @@
 ---
 title: "USB"
-weight: 3
 alwaysopen: false
 chapter: true
 ---

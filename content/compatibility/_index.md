@@ -1,6 +1,6 @@
 ---
 title: "Compatibility chart"
-weight: 4
+weight: 5
 hidden: true
 ---
 

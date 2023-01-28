@@ -1,6 +1,5 @@
 ---
 title: "Nintendo Wii"
-weight: 4
 alwaysopen: false
 chapter: true
 ---

@@ -320,8 +320,12 @@ ps2_trainyamanote:
   date: 2001-10-04
   code: "SCPS-15018"
   platform: ps2
-  ref: "/software_other/ps2/trainyamanote"
+  ref: "/software_ts/ps2/trainyamanote"
   controllers:
+    - model: vok00105
+      notes: "Requires official USB adapter. Set to Type F."
+    - model: vok00106
+      notes: "Requires official USB adapter. Set power to 5 and brake to 8."
     - model: sotp031201
       notes: "P5/B8 cassette."
     - model: tcpp20009
@@ -332,8 +336,12 @@ ps2_trainkeihin:
   date: 2002-10-31
   code: "SCPS-15035"
   platform: ps2
-  ref: "/software_other/ps2/trainkeihin"
+  ref: "/software_ts/ps2/trainkeihin"
   controllers:
+    - model: vok00105
+      notes: "Requires official USB adapter. Set to Type C."
+    - model: vok00106
+      notes: "Requires official USB adapter. Set power to 5 and brake to 5."
     - model: sotp031201
       notes: "P5/B5 cassette."
     - model: cotm02001
@@ -344,10 +352,15 @@ ps2_trainmidosuji:
   date: 2003-10-30
   code: "SLPM-65386"
   platform: ps2
-  ref: "/software_other/ps2/trainmidosuji"
+  ref: "/software_ts/ps2/trainmidosuji"
   controllers:
+    - model: vok00105
+      notes: "Requires official USB adapter. Set to Type D."
+    - model: vok00106
+      notes: "Requires official USB adapter. Set power to 4 and brake to 6."
     - model: sotp031201
       notes: "P4/B7 (without B1) cassette."
+    - model: cotm02001
 
 ps2_traindensha:
   name: "Train Simulator ＋ Densha de GO!: Tokyu Line"
@@ -355,8 +368,12 @@ ps2_traindensha:
   date: 2003-12-18
   code: "SLPM-65472"
   platform: ps2
-  ref: "/software_other/ps2/traindensha"
+  ref: "/software_ts/ps2/traindensha"
   controllers:
+    - model: vok00105
+      notes: "Requires official USB adapter. Set to Type D."
+    - model: vok00106
+      notes: "Requires official USB adapter. Set power to 4 and brake to 5."
     - model: sotp031201
       notes: "P4/B7 cassette."
 
@@ -366,8 +383,12 @@ ps2_trainkeitokei:
   date: 2005-08-25
   code: "SLPM-67007"
   platform: ps2
-  ref: "/software_other/ps2/trainkeitokei"
+  ref: "/software_ts/ps2/trainkeitokei"
   controllers:
+    - model: vok00105
+      notes: "Requires official USB adapter. Set to Type C."
+    - model: vok00106
+      notes: "Requires official USB adapter. Set power to 5 and brake to 5."
     - model: sotp031201
       notes: "P5/B5, P13-B7 cassettes."
     - model: tcpp20011
@@ -379,8 +400,12 @@ ps2_trainshinkansen:
   date: 2005-10-01
   code: "SLPM-67006"
   platform: ps2
-  ref: "/software_other/ps2/trainshinkansen"
+  ref: "/software_ts/ps2/trainshinkansen"
   controllers:
+    - model: vok00105
+      notes: "Requires official USB adapter. Set to Type G."
+    - model: vok00106
+      notes: "Requires official USB adapter. Set power to 5 and brake to 7."
     - model: sotp031201
       notes: "P5/B7, P13-B7 cassettes."
     - model: tcpp20011
@@ -392,7 +417,7 @@ ps3_railfanchicago:
   code: "BLJM-60013"
   platform: ps3
   image: "ps3_railfanchicago.jpg"
-  ref: "/software_other/ps3/railfanchicago"
+  ref: "/software_ts/ps3/railfanchicago"
   controllers:
     - model: sotp031201
       notes: "P5/B8 cassette."
@@ -405,7 +430,7 @@ ps3_railfantaiwan:
   code: "BLJS-10012"
   platform: ps3
   image: "ps3_railfantaiwan.jpg"
-  ref: "/software_other/ps3/railfantaiwan"
+  ref: "/software_ts/ps3/railfantaiwan"
 
 ps4_yamanote:
   name: "Densha de GO! Hashirō Yamanote‑sen"
@@ -624,6 +649,35 @@ switch_japanakechi:
   platform: switch
   image: "switch_japanakechi.jpg"
   ref: "/software_other/switch/japanakechi"
+  controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: zkns001
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
+
+switch_japanpronagoya:
+  name: "Japanese Rail Sim Real Pro: Nagoya Railway"
+  namejp: "電鉄道にっぽん！Real Pro 特急走行!名古屋鉄道編"
+  date: 2022-12-15
+  code: "HAC-P-A9QAA"
+  platform: switch
+  image: "switch_japanpronagoya.jpg"
+  ref: "/software_other/switch/japanpronagoya"
   controllers:
     - model: dgoc44u
       unofficial: yes

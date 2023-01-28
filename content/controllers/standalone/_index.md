@@ -1,6 +1,5 @@
 ---
 title: "Standalone"
-weight: 5
 alwaysopen: false
 chapter: true
 ---

@@ -117,6 +117,19 @@ tcpp20017:
   image: "tcpp20017.jpg"
   ref: "/controllers/wii/tcpp20017"
 
+vok00105:
+  name: "Master Controller (PC)"
+  date: 1998-03-04
+  code: "VOK-00105"
+  ref: "/controllers/serial/vok00105"
+
+vok00106:
+  name: "Master Controller II (PC)"
+  date: 1999-12-17
+  code: "VOK-00106"
+  ref: "/controllers/serial/vok00106"
+
+
 zkns001:
   name: "One handle controller (Nintendo Switch)"
   date: 2021-08-05

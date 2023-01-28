@@ -1,9 +1,9 @@
 ---
-title: "Main series software"
+title: "Densha de GO! series"
 weight: 2
 chapter: true
 ---
 
-# Main series software
+# Densha de GO! series
 
-This section lists software from the main *Densha de GO!* series compatible with dedicated controllers. Software is grouped by platform and sorted by release date.
+This section lists software from the *Densha de GO!* series compatible with dedicated controllers. Software is grouped by platform and sorted by release date.
