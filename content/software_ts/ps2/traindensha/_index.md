@@ -1,5 +1,5 @@
 ---
-title: "Train Simulator ＋ Densha de GO! Tokyu Line"
+title: "Train Simulator + Densha de GO! Tokyu Line"
 weight: 4
 ---
 

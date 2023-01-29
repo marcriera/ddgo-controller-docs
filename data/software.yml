@@ -362,7 +362,7 @@ ps2_trainmidosuji:
       notes: "P4/B7 (without B1) cassette."
 
 ps2_traindensha:
-  name: "Train Simulator ＋ Densha de GO!: Tokyu Line"
+  name: "Train Simulator + Densha de GO!: Tokyu Line"
   namejp: "Train Simulator+電車でGO! 東京急行編"
   date: 2003-12-18
   code: "SLPM-65472"
