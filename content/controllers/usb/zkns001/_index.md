@@ -16,6 +16,8 @@ This controller has one handle (5 power notches and 8+emergency brake notches) a
 | **USB standard descriptor** | [Link](/controllers/usb/descriptors/zkns001_standard-descriptor.txt)                             |
 | **HID report descriptor**   | [Link](/controllers/usb/descriptors/zkns001_hid-report-descriptor.txt)                           |
 
+### Input
+
 The power/brake handle notches are reported in the Y axis of the left stick. There are no transition values between notches. In addition, when the handle is set to **Emergency**, **ZL** is pressed.
 
 | Emergency | B8   | B7   | B6   | B5   | B4   | B3   | B2   | B1   | N    | P1   | P2   | P3   | P4   | P5   |
