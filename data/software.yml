@@ -491,6 +491,29 @@ ps4_japankyoto:
       unofficial: yes
       adapter: titan
 
+
+pc_trainsim:
+  name: "Train Simulator"
+  date: 1995-08-19
+  platform: pc
+  ref: "/software_ts/pc/trainsim"
+  notes: "Multiple entries released from 1995 to 2000."
+  controllers:
+    - model: vok00105
+      notes: "Many entries require companion software to use the controller."
+    - model: vok00106
+      notes: "Many entries require companion software to use the controller."
+
+pc_trainsimplus:
+  name: "Train Simulator PLUS"
+  date: 2000-07-19
+  platform: pc
+  ref: "/software_ts/pc/trainsimplus"
+  notes: "Multiple entries released from 2000 to 2001."
+  controllers:
+    - model: vok00105
+    - model: vok00106
+
 pc_bve:
   name: "BVE Trainsim"
   date: 2011-09-05
