@@ -611,11 +611,11 @@ pc_traincrew:
   url: "https://acty-soft.com/traincrew/"
   ref: "/software_other/pc/traincrew"
   controllers:
-    - model: dgoc44u
-      unofficial: yes
-      adapter: titan
+    - model: vok00105
+    - model: vok00106
     - model: zkns001
     - model: ohcpc01
+    - model: dgoc44u
 
 switch_yamanote:
   name: "Densha de GO! Hashirō Yamanote‑sen"
