@@ -375,7 +375,7 @@ ps2_traindensha:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 4 and brake to 7."
     - model: sotp031201
-      notes: "P4/B7, B5-B5 cassettes."
+      notes: "P4/B7, P5-B5 cassettes."
     - model: cotm02001
 
 ps2_trainkeitokei:
