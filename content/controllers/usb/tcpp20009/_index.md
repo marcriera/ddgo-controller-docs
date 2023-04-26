@@ -62,7 +62,7 @@ The controller supports receiving data via a control transfer to turn on/off the
 
 | bmRequestType | bRequest | wValue | wIndex | wLength |
 |:-------------:|:--------:|:------:|:------:|:-------:|
-| 0x40          | 0x09     | 0x0301 | 0x0000 | 0x0002  |
+| 0x41          | 0x09     | 0x0201 | 0x0000 | 0x0002  |
 
 The data sent to the controller follows the structure below.
 
