@@ -9,6 +9,8 @@ This controller is different from traditional controllers in the sense that it c
 
 The micro USB port supports USB OTG with a powered adapter and is used by Taito to install software updates.
 
+## Mods
+
 There are several unofficial mods available to improve or add functionality to the console:
 
 | **Mod**                     | **Site**                                                               | **Description**                                                                                        |
