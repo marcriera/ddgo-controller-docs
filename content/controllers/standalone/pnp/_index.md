@@ -9,4 +9,12 @@ This controller is different from traditional controllers in the sense that it c
 
 The micro USB port supports USB OTG with a powered adapter and is used by Taito to install software updates.
 
-It is possible to update the Linux kernel on the board to enable USB gadget mode and emulate traditional controllers, such as the [DGOC-44U](/controllers/usb/dgoc44u). This makes it possible to control other software. You can find more information [here](https://github.com/GMMan/dengo-plug-and-play-controller).
+There are several unofficial mods available to improve or add functionality to the console:
+
+| **Mod**                     | **Site**                                                               | **Description**                                                                                        |
+|-----------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Chime Patcher               | [Link](https://github.com/GMMan/dengo-plug-and-play-chimes-patch)      | Restores the station jingles and musical horns from *Densha de GO! Final*.                             |
+| Overclock script            | [Link](https://gist.github.com/GMMan/5b5daa43d7922d1e32a1b79cf344ad01) | Sets the console's CPU to a higher (but safe) clock rate to improve performance.                       |
+| Controller mod              | [Link](https://github.com/MarcRiera/ddgo-pnp-controller)               | Allows using the console as a USB controller for PC and consoles. Several controller models available. |
+| Controller mod (legacy)     | [Link](https://github.com/GMMan/dengo-plug-and-play-controller)        | Allows using the console as a DGOC-44U controller. Superseded by the newer multi-controller mod.       |
+
