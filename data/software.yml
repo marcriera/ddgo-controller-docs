@@ -618,6 +618,25 @@ pc_traincrew:
     - model: ohcpc01
     - model: dgoc44u
 
+pc_hmmsimmetro:
+  name: "Hmmsim Metro"
+  date: 2021-06-25
+  platform: pc
+  url: "https://jeminie.kr/Hmmsim-Metro"
+  ref: "/software_other/pc/hmmsimmetro"
+  controllers:
+    - model: zkns001
+
+pc_japanmeitetsu:
+  name: "Japanese Rail Sim: Operating the MEITETSU Line"
+  namejp: "鉄道にっぽん！RealPro 名古屋鉄道編 PC Edition"
+  date: 2023-04-27
+  platform: pc
+  url: "https://store.steampowered.com/app/2281540/Japanese_Rail_Sim_Operating_the_MEITETSU_Line/"
+  ref: "/software_other/pc/japanmeitetsu"
+  controllers:
+    - model: zkns001
+
 switch_yamanote:
   name: "Densha de GO! Hashirō Yamanote‑sen"
   namejp: "電車でGO!! はしろう山手線"
