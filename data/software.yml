@@ -38,9 +38,9 @@ pc_densha:
   ref: "/software/pc/densha"
   controllers:
     - model: dgc255
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44u
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44
 
 pc_densha2:
@@ -51,9 +51,9 @@ pc_densha2:
   ref: "/software/pc/densha2"
   controllers:
     - model: dgc255
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44u
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44
 
 pc_pro:
@@ -75,9 +75,9 @@ pc_nagoya:
   ref: "/software/pc/nagoya"
   controllers:
     - model: dgc255
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44u
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44
 
 pc_kisha:
@@ -88,9 +88,9 @@ pc_kisha:
   ref: "/software/pc/kisha"
   controllers:
     - model: dgc255
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44u
-      notes: "Only republished version."
+      notes: "Original release requires update."
     - model: dgoc44
 
 pc_densha3:
