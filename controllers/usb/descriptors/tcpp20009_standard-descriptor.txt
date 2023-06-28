@@ -7,7 +7,7 @@
 0x08,        // bMaxPacketSize0 8
 0xE4, 0x0A,  // idVendor 0x0AE4
 0x04, 0x00,  // idProduct 0x04
-0x02, 0x01,  // bcdDevice 2.02
+0x02, 0x01,  // bcdDevice 1.02
 0x01,        // iManufacturer (String Index) "TAITO"
 0x02,        // iProduct (String Index) "TAITO_DENSYA_CON_T01"
 0x03,        // iSerialNumber (String Index) "TCPP20010"
