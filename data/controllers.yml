@@ -22,6 +22,7 @@ dgoc44u:
   name: "Two handle controller (PC)"
   date: 2001-06-15
   code: "DGOC-44U"
+  image: "dgoc44u.jpg"
   ref: "/controllers/usb/dgoc44u"
 
 dyc288:
