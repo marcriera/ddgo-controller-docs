@@ -613,7 +613,9 @@ pc_traincrew:
   ref: "/software_other/pc/traincrew"
   controllers:
     - model: vok00105
+      notes: "Requires plugin from official website. Set to Type G."
     - model: vok00106
+      notes: "Requires plugin from official website. Set power to 5 and brake to 7."
     - model: zkns001
     - model: ohcpc01
     - model: dgoc44u
@@ -625,6 +627,10 @@ pc_hmmsimmetro:
   url: "https://jeminie.kr/Hmmsim-Metro"
   ref: "/software_other/pc/hmmsimmetro"
   controllers:
+    - model: vok00105
+      notes: "Set to Type D."
+    - model: vok00106
+      notes: "Set power to 4 and brake to 7."
     - model: zkns001
 
 pc_japanmeitetsu:
