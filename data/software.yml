@@ -748,6 +748,35 @@ switch_japanpronagoya:
       unofficial: yes
       adapter: titan
 
+switch_japanexnagaragawa:
+  name: "Japanese Rail Sim EX: Nagaragawa Railway"
+  namejp: "鉄道にっぽん！路線たびEX 清流運転 長良川鉄道編"
+  date: 2023-08-24
+  code: "HAC-P-BCXNA"
+  platform: switch
+  image: "switch_japanexnagaragawa.jpg"
+  ref: "/software_other/switch/japanexnagaragawa"
+  controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: zkns001
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
+
 wii_shinkansen:
   name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"
   namejp: "電車でGO！新幹線EX 山陽新幹線編"
