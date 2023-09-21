@@ -777,6 +777,35 @@ switch_japanexnagaragawa:
       unofficial: yes
       adapter: titan
 
+switch_japanproodakyu:
+  name: "Japanese Rail Sim Real Pro: Odakyu Electric Railway"
+  namejp: "鉄道にっぽん！RealPro 特急ロマンスカー！小田急電鉄編"
+  date: 2023-12-14
+  code: ""
+  platform: switch
+  image: "switch_japanproodakyu.jpg"
+  ref: "/software_other/switch/japanproodakyu"
+  controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: zkns001
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
+
 wii_shinkansen:
   name: "Densha de GO! Shinkansen EX San'yō Shinkansen-hen"
   namejp: "電車でGO！新幹線EX 山陽新幹線編"
