@@ -16,7 +16,7 @@ Internally, it is a HID device with a vendor-specific class.
 | **Product ID**              | 0x0004                                    |
 | **Serial number**           | TCPP20010                                 |
 | **USB standard descriptor** | [Link](/controllers/usb/descriptors/tcpp20009_standard-descriptor.txt) |
-| **HID report descriptor**   | Unavailable                               |
+| **HID report descriptor**   | Not provided                              |
 
 ### Input
 
