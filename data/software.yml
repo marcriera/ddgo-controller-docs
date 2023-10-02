@@ -220,7 +220,7 @@ ps2_densha3:
   controllers:
     - model: tcpp20002
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20001
     - model: slph00051
     - model: tcpp20009
@@ -236,7 +236,7 @@ ps2_shinkansen:
   controllers:
     - model: tcpp20002
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20001
     - model: tcpp20011
     - model: slph00051
@@ -255,7 +255,7 @@ ps2_ryojouhen:
       unofficial: yes
       adapter: ps2_cheats
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20001
       unofficial: yes
       adapter: ps2_cheats
@@ -279,7 +279,7 @@ ps2_pro2:
       unofficial: yes
       adapter: ps2_cheats
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20001
       unofficial: yes
       adapter: ps2_cheats
@@ -303,7 +303,7 @@ ps2_final:
       unofficial: yes
       adapter: ps2_cheats
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20001
       unofficial: yes
       adapter: ps2_cheats
@@ -327,7 +327,7 @@ ps2_trainyamanote:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 5 and brake to 8."
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20009
 
 ps2_trainkeihin:
@@ -343,7 +343,7 @@ ps2_trainkeihin:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 5 and brake to 5."
     - model: sotp031201
-      notes: "P5/B5 cassette."
+      notes: "P5/B5 cartridge."
     - model: cotm02001
 
 ps2_trainmidosuji:
@@ -359,7 +359,7 @@ ps2_trainmidosuji:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 4 and brake to 6."
     - model: sotp031201
-      notes: "P4/B2-B7, P5-B5 cassettes."
+      notes: "P4/B2-B7, P5-B5 cartridges."
     - model: cotm02001
 
 ps2_traindensha:
@@ -375,7 +375,7 @@ ps2_traindensha:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 4 and brake to 7."
     - model: sotp031201
-      notes: "P4/B7, P5-B5 cassettes."
+      notes: "P4/B7, P5-B5 cartridges."
     - model: cotm02001
 
 ps2_trainkeitokei:
@@ -391,7 +391,7 @@ ps2_trainkeitokei:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 5 and brake to 5."
     - model: sotp031201
-      notes: "P5/B5, P13-B7 cassettes."
+      notes: "P5/B5, P13-B7 cartridges."
     - model: tcpp20011
     - model: cotm02001
 
@@ -408,7 +408,7 @@ ps2_trainshinkansen:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 5 and brake to 7."
     - model: sotp031201
-      notes: "P5/B7, P13-B7 cassettes."
+      notes: "P5/B7, P13-B7 cartridges."
     - model: tcpp20011
 
 ps3_railfanchicago:
@@ -421,7 +421,7 @@ ps3_railfanchicago:
   ref: "/software_ts/ps3/railfanchicago"
   controllers:
     - model: sotp031201
-      notes: "P5/B8 cassette."
+      notes: "P5/B8 cartridge."
     - model: tcpp20009
 
 ps3_railfantaiwan:
@@ -571,7 +571,7 @@ pc_openbve:
       adapter: bve_plugin
     - model: sotp031201
       partial: yes
-      notes: "Only P5/B8 cassette."
+      notes: "Only P5/B8 cartridge."
       adapter: bve_plugin
     - model: zkns001
       adapter: bve_plugin
