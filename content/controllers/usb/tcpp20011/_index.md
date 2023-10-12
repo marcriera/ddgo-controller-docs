@@ -22,9 +22,9 @@ Internally, it is a HID device with a vendor-specific class.
 
 The controller sends reports to the host (PS2) formed by 6 bytes:
 
-| Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5  | Byte 6 |
-|:------:|:------:|:------:|:------:|:-------:|:------:|
-| Brake  | Power  | Pedal  | D-Pad  | Buttons | Null   |
+| Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5  | Byte 6   |
+|:------:|:------:|:------:|:------:|:-------:|:--------:|
+| Brake  | Power  | Pedal  | D-Pad  | Buttons | *Unused* |
 
 The values for the brake notch byte are the following.
 
@@ -71,8 +71,8 @@ The data sent to the controller follows the structure below.
 | Left rumble | Right rumble| Door lamp + Limit approach | Speed gauge | Speedometer | ATC limit |
 
 * **Left/right rumble:** **0x00** is **Off**, **0x01** is **On**.
-* **Door lamp:** **0x0?** is **Off**, **0x8?** is **On**.
-* **Limit approach:** values between **0x?0** and **0x?A** representing the number of LEDs lit above the speedometer. In-game, these mark the 10 km/h right below the speed limit.
+* **Door lamp:** **0x0X** is **Off**, **0x8X** is **On**.
+* **Limit approach:** values between **0xX0** and **0xXA** representing the number of LEDs lit above the speedometer. In-game, these mark the 10 km/h right below the speed limit.
 * **Speed gauge:** values between **0x00** and **0x16** representing the number of LEDs lit on the speed gauge. LED #23 cannot be lit. In-game, these mark 15 km/h increments in the current speed, with one lit when speed is 1-15 km/h, two when 16-30 km/h, etc.
 * **Speedometer:** values between **0x0000** and **0x0999** representing the current speed. Values are encoded with **BCD 8421** (i.e. **120 km/h** should be represented as **0x0120**, NOT **0x0078**).
 * **ATC limit:** values between **0x0000** and **0x0999** representing the ATC speed limit. Values are encoded with **BCD 8421** (i.e. **120 km/h** should be represented as **0x0120**, NOT **0x0078**).
