@@ -45,6 +45,11 @@ pnp:
   image: "pnp.jpg"
   ref: "/controllers/standalone/pnp"
 
+pnp2:
+  name: "Densha de GO! Plug and Play 2"
+  date: 2023-12-07
+  ref: "/controllers/standalone/pnp2"
+
 sotp031201:
   name: "Multi Train Controller (Sony PlayStation 2)"
   date: 2003-12-18
