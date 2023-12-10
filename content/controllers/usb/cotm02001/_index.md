@@ -16,7 +16,7 @@ Internally, it is a HID device with a vendor-specific class. The reported data d
 | **Product ID**              | 0x77A7                                    |
 | **Serial number**           | *Unavailable*                             |
 | **USB standard descriptor** | *Unavailable*                             |
-| **HID report descriptor**   | Not provided                              |
+| **HID report descriptor**   | [Link](/controllers/usb/descriptors/cotm02001_hid-report-descriptor.txt) (recreated, not provided by actual device) |
 
 ### Input
 

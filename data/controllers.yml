@@ -48,6 +48,7 @@ pnp:
 pnp2:
   name: "Densha de GO! Plug and Play 2"
   date: 2023-12-07
+  code: "TPP-D-002"
   ref: "/controllers/standalone/pnp2"
 
 sotp031201:
@@ -56,7 +57,7 @@ sotp031201:
   code: "SOTP-031201"
   image: "sotp031201.jpg"
   ref: "/controllers/usb/sotp031201"
-  notes: "Released with 4 cassettes: P4-B7, P4-B7 (without B1), P5-B5 and P5-B8. Additional cassettes sold separately: P5-B7 and P13-B7."
+  notes: "Released with 4 cartridges: P4-B7, P4-B7 (without B1), P5-B5 and P5-B8. Additional cartridges sold separately: P5-B7 and P13-B7."
 
 slph00051:
   name: "Two handle controller (Sony PlayStation)"
