@@ -570,8 +570,6 @@ pc_openbve:
       notes: "Requires USB adapter and calibration."
       adapter: bve_plugin
     - model: sotp031201
-      partial: yes
-      notes: "Only P5/B8 cartridge."
       adapter: bve_plugin
     - model: zkns001
       adapter: bve_plugin
@@ -587,6 +585,8 @@ pc_openbve:
     - model: ohcpc01
       adapter: bve_plugin
     - model: tcpp20011
+      adapter: bve_plugin
+    - model: cotm02001
       adapter: bve_plugin
     - model: tcpp20003
       notes: "Requires USB adapter and calibration."
