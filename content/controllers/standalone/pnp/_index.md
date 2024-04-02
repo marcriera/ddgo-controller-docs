@@ -19,4 +19,5 @@ There are several unofficial mods available to improve or add functionality to t
 | Overclock script            | [Link](https://gist.github.com/GMMan/5b5daa43d7922d1e32a1b79cf344ad01) | Sets the console's CPU to a higher (but safe) clock rate to improve performance. May cause crashes     |
 | Controller mod              | [Link](https://github.com/MarcRiera/ddgo-pnp-controller)               | Allows using the console as a USB controller for PC and consoles. Several controller models available. |
 | Controller mod (legacy)     | [Link](https://github.com/GMMan/dengo-plug-and-play-controller)        | Allows using the console as a DGOC-44U controller. Superseded by the newer multi-controller mod.       |
+| Translation Patcher         | [Link](https://github.com/zapan/dengo-plug-and-play-translation-patch) | English translation for *Densha de Go! Plug & Play*.                                                   |
 
