@@ -34,14 +34,14 @@ For retail discs, the codes can be loaded with [ps2rd](https://github.com/mlafel
 
 These cheat codes have become possible after disassembling and inspecting each game with [Ghidra](https://ghidra-sre.org/) and the [ghidra-emotionengine](https://github.com/beardypig/ghidra-emotionengine) plugin. The format of cheat codes is described [here](https://github.com/root670/CheatDevicePS2/wiki/Code-Types).
 
-Here you can find a commented version of the cheat code for ***Densha de GO! Professional 2 (Taito Best)***. Input data is copied to 0xFE000 (two bytes for button data and one byte for D-pad data) before processing.
+Here you can find a commented version of the cheat code for ***Densha de GO! Professional 2 (Taito Best)***. Input data is copied to 0xFE000 (two bytes for button data and one byte for D-pad data) before processing. Simulated controller data is first written to 0xFE004 before being copied all at once to the final location in memory where the game expects USB input data.
 
 ```
 202D3CAC 00000000 // By default, set number of connected USB devices to 0
-D02DBA32 58010001 // If there's a controller connected to P2, run the following 0x58 lines (everything)
+D02DBA32 5A010001 // If there's a controller connected to P2, run the following 0x5A lines (everything)
 502DB9C2 00000002 // Copy button data to 0xFE000
 000FE000 00000000
-D00FE000 55400050 // If the controller in P2 has UP+DOWN pressed, run the following 0x55 lines (everything)
+D00FE000 57400050 // If the controller in P2 has UP+DOWN pressed, run the following 0x57 lines (everything)
 203790F0 40000202 // Set USB controller model to Type 2
 202D3CAC 00000001 // Set number of connected USB devices to 1
 
@@ -67,75 +67,79 @@ D02DB9C7 010100FF // DOWN
 
 // Buttons
 2012BDC0 34420000 // ASM patch (disables game function that reads input from P2)
-003794C6 00000000 // Clear button data for Type 2 controller
+000FE008 00000000 // Clear button data for Type 2 controller
 D00FE000 01408000 // A
-703794C6 00000002
+000FE008 00000002
 D00FE000 01404000 // B
-703794C6 00000001
+000FE008 00000001
 D00FE000 01402000 // C
-703794C6 00000004
+000FE008 00000004
 D00FE000 01400002 // D (L3)
-703794C6 00000008
+000FE008 00000008
 D00FE000 01400008 // START
-703794C6 00000020
+000FE008 00000020
 D00FE000 01400001 // SELECT
-703794C6 00000010
+000FE008 00000010
 
 // D-Pad
 D00FE002 010100EF // N
-003794C5 00000000
+000FE007 00000000
 D00FE002 010100CF // NE
-003794C5 00000001
+000FE007 00000001
 D00FE002 010100DF // E
-003794C5 00000002
+000FE007 00000002
 D00FE002 0101009F // SE
-003794C5 00000003
+000FE007 00000003
 D00FE002 010100BF // S
-003794C5 00000004
+000FE007 00000004
 D00FE002 0101003F // SW
-003794C5 00000005
+000FE007 00000005
 D00FE002 0101007F // W
-003794C5 00000006
+000FE007 00000006
 D00FE002 0101006F // NW
-003794C5 00000007
+000FE007 00000007
 D00FE002 010100FF // CENTER
-003794C5 00000008
+000FE007 00000008
 
 // Power handle
 D00FE000 01401000 // P5
-003794C3 00000005
+000FE005 00000005
 D00FE000 01400080 // P4
-003794C3 00000004
+000FE005 00000004
 D00FE000 01401080 // P3
-003794C3 00000003
+000FE005 00000003
 D00FE000 01400020 // P2
-003794C3 00000002
+000FE005 00000002
 D00FE000 01401020 // P1
-003794C3 00000001
+000FE005 00000001
 D00FE000 014000A0 // P0
-003794C3 00000000
+000FE005 00000000
 
 // Brake handle
-700FE000 00300F00 // Bitmask: discard all button data besides the 4 bits for brake notches
+700FE000 00300F00 // Bitmask: discard all button data besides the 4 bits for brake notche
 D00FE000 01000F00 // EB
-003794C2 00000009
+000FE004 00000009
 D00FE000 01000600 // B8
-003794C2 00000008
+000FE004 00000008
 D00FE000 01000200 // B7
-003794C2 00000007
+000FE004 00000007
 D00FE000 01000D00 // B6
-003794C2 00000006
+000FE004 00000006
 D00FE000 01000900 // B5
-003794C2 00000005
+000FE004 00000005
 D00FE000 01000C00 // B4
-003794C2 00000004
+000FE004 00000004
 D00FE000 01000800 // B3
-003794C2 00000003
+000FE004 00000003
 D00FE000 01000500 // B2
-003794C2 00000002
+000FE004 00000002
 D00FE000 01000100 // B1
-003794C2 00000001
+000FE004 00000001
 D00FE000 01000400 // B0
+000FE004 00000000
+
+// Send data to game
+500FE004 00000006  // Copy 6 bytes (all input) to memory location where game expects USB input data
 003794C2 00000000
 ```
 
@@ -145,10 +149,7 @@ D00FE000 01000400 // B0
 |:-----------------------------------|:----------------------------|:---------------|:----------|:---------|:----------------------------------------------------------------------------|
 | **USB mascon count (int32)**       | 0x2D3CAC                    | 0x2C852C       | 0x24B6DC  | 0x2C1464 |                                                                             |
 | **USB mascon model (int32)**       | 0x3790F0                    | 0x36EAF0       | 0x2F24E0  | 0x3DEA10 | 0x40000202=Type 2                                                           |
-| **Type 2 brake notch (byte)**      | 0x3794C2                    | 0x36EEC2       | 0x2F28C2  | 0x3DF242 | Preprocessed, 0 to 9                                                        |
-| **Type 2 power notch (byte)**      | 0x3794C3                    | 0x36EEC3       | 0x2F28C3  | 0x3DF243 | Preprocessed, 0 to 5                                                        |
-| **Type 2 D-pad data (byte)**       | 0x3794C5                    | 0x36EEC5       | 0x2F28C5  | 0x3DF245 | Raw USB data                                                                |
-| **Type 2 button data (byte)**      | 0x3794C6                    | 0x36EEC6       | 0x2F28C6  | 0x3DF246 | Raw USB data                                                                |
+| **Type 2 USB data (5 bytes)**      | 0x3794C2                    | 0x36EEC2       | 0x2F28C2  | 0x3DF242 | Raw USB data, except notches, which are preprocessed to notch index         |
 | **P2 controller connected (byte)** | 0x2DBA32                    | 0x2D14F2       | 0x2548F2  | 0x2C8172 | 0x00=Disconnected, 0x01=Connected                                           |
 | **P2 controller type (byte)**      | 0x2DB9C1                    | 0x2D1481       | 0x254881  | 0x2C8101 | 0x41=Digital, 0x73=Dualshock                                                |
 | **P2 button input (int16)**        | 0x2DB9C2                    | 0x2D1482       | 0x254882  | 0x2C8102 |                                                                             |
