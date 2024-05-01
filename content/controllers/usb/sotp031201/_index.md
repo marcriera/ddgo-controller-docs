@@ -68,4 +68,13 @@ The second button byte also uses six bits to represent the state of the physical
 
 #### Output
 
-No details are known regarding internal functioning. 
+The controller supports receiving data via a control transfer to turn on/off the lamps. The setup packet is as follows:
+
+| bmRequestType | bRequest | wValue    | wIndex | wLength |
+|:-------------:|:--------:|:---------:|:------:|:-------:|
+| 0x40          | 0x50     | Lamp data | 0x0000 | 0x0000  |
+
+Changing *wValue* controls the lamps with the logic below.
+
+* **Door lamp:** **0x0X** is **Off**, **0x1X** is **On**.
+* **Signal lamp:** **0xX0** is **Off**, **0xX1** is **ATS**, **0xX2** is **45**, **0xX3** is **15**.
