@@ -492,7 +492,6 @@ ps4_japankyoto:
       unofficial: yes
       adapter: titan
 
-
 pc_trainsim:
   name: "Train Simulator"
   date: 1995-08-19
@@ -640,6 +639,15 @@ pc_japanmeitetsu:
   platform: pc
   url: "https://store.steampowered.com/app/2281540/Japanese_Rail_Sim_Operating_the_MEITETSU_Line/"
   ref: "/software_other/pc/japanmeitetsu"
+  controllers:
+    - model: zkns001
+
+pc_jreasttrainsimulator:
+  name: "JR EAST Train Simulator"
+  date: 2022-11-15
+  platform: pc
+  url: "https://store.steampowered.com/app/2111630/JR_EAST_Train_Simulator/"
+  ref: "/software_other/pc/jreasttrainsimulator"
   controllers:
     - model: zkns001
 
