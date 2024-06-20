@@ -136,7 +136,6 @@ vok00106:
   code: "VOK-00106"
   ref: "/controllers/serial/vok00106"
 
-
 zkns001:
   name: "One handle controller (Nintendo Switch)"
   date: 2021-08-05
