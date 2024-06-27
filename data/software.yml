@@ -789,10 +789,39 @@ switch_japanproodakyu:
   name: "Japanese Rail Sim Real Pro: Odakyu Electric Railway"
   namejp: "鉄道にっぽん！RealPro 特急ロマンスカー！小田急電鉄編"
   date: 2023-12-14
-  code: ""
+  code: "HAC-P-BE2DA"
   platform: switch
   image: "switch_japanproodakyu.jpg"
   ref: "/software_other/switch/japanproodakyu"
+  controllers:
+    - model: dgoc44u
+      unofficial: yes
+      adapter: titan
+    - model: tcpp20001
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: tcpp20002
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: slph00051
+      unofficial: yes
+      notes: "Requires USB adapter."
+      adapter: titan
+    - model: zkns001
+    - model: ohcpc01
+      unofficial: yes
+      adapter: titan
+
+switch_japanexhakone:
+  name: "Japanese Rail Sim EX: Mountain Railway Odakyu Hakone"
+  namejp: "鉄道にっぽん！路線たびＥＸ 登山電車 小田急箱根編"
+  date: 2024-09-19
+  code: ""
+  platform: switch
+  image: "switch_japanexhakone.jpg"
+  ref: "/software_other/switch/japanexhakone"
   controllers:
     - model: dgoc44u
       unofficial: yes
