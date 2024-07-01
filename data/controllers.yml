@@ -48,6 +48,7 @@ pnp:
 pnp2:
   name: "Densha de GO! Plug and Play 2"
   date: 2023-12-07
+  image: "pnp2.jpg"
   code: "TPP-D-002"
   ref: "/controllers/standalone/pnp2"
 
@@ -128,12 +129,14 @@ vok00105:
   name: "Master Controller (PC)"
   date: 1998-03-04
   code: "VOK-00105"
+  image: "vok00105.jpg"
   ref: "/controllers/serial/vok00105"
 
 vok00106:
   name: "Master Controller II (PC)"
   date: 1999-12-17
   code: "VOK-00106"
+  image: "vok00106.jpg"
   ref: "/controllers/serial/vok00106"
 
 zkns001:

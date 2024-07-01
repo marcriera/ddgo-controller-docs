@@ -11,6 +11,6 @@ _build:
 
 ## Images
 
-- air_nith: DGC-255, DGOC-44U, DYC-288, TCPP-20014
+- air_nith: DGC-255, DGOC-44U, DYC-288, TCPP-20014, VOK-00105, VOK-00106, Plug and Play 2
 - TheYamanote: TCPP-20001
 - Internet Games Database (IGDB)
