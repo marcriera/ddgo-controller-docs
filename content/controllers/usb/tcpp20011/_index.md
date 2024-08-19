@@ -6,7 +6,7 @@ title: "Shinkansen controller (Sony PlayStation 2)"
 
 This controller has two handles (13 power notches and 7+emergency brake notches), a D-Pad and 6 buttons (Select, Start, A, B, C, D). In addition, it provides a simple display, a door lamp and a 3.5 mm jack connector to plug a horn pedal. There are two rumble motors, one in each handle.
 
-Internally, it is a HID device with a vendor-specific class.
+Internally, it is a vendor-specific class device with a HID interface, but it does not provide HID descriptors.
 
 |                             |                                           |
 |-----------------------------|-------------------------------------------|
@@ -52,9 +52,9 @@ The D-pad byte represents the state of the arrow buttons. If two opposite direct
 
 The button byte uses six bits to represent the state of the physical buttons. **0** means that the button is released and **1** that it is pressed. A bitmask can be used to retrieve the buttons.
 
-| Button 1 | Button 2 | Button 3 | Button 4 | Button 5 | Button 6 |
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| D        | C        | B        | A        | SELECT   | START    |
+| Bit 0 | Bit 1 | Bit 2 | Bit 3 | Bit 4  | Bit 5 |
+|:-----:|:-----:|:-----:|:-----:|:------:|:-----:|
+| D     | C     | B     | A     | SELECT | START |
 
 ### Output
 

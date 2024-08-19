@@ -4,9 +4,9 @@ title: "Multi Train Controller (Sony PlayStation 2)"
 
 {{% controller-page "sotp031201" %}}
 
-This controller has one handle with variable notches, a D-Pad and 7 buttons (Select, Start, A, B, C, D, ATS). The A button can distinguish between "soft" and "hard" presses. In addition, the controller has four lamps.
+This controller has one handle with several notch cartridges (P4/B7, P4/B2-B7, P5/B5, P5/B7, B5/B8, P13/B7), a D-Pad and 7 buttons (Select, Start, A, B, C, D, ATS). The A button can distinguish between "soft" and "hard" presses. In addition, the controller has four lamps.
 
-Internally, it is a HID device with a vendor-specific class. The reported data depends on the notch cartridge inserted. 
+Internally, it is a vendor-specific class device. The USB descriptors and the reported data change depending on the notch cartridge inserted. 
 
 |                             |                                           |
 |-----------------------------|-------------------------------------------|
@@ -34,7 +34,7 @@ Only the top lamp is used, for the doors.
 
 When any of these cartridges is inserted, the controller functions similarly to the P5/B5 mode and data changes depending on the amount of notches. The specific cartridge in use can be detected by looking at the *bcdDevice* value from the standard USB descriptor:
 
-| P4/B7  | P4/B2-B7 | P5/B7  |P13/B7  |
+| P4/B7  | P4/B2-B7 | P5/B7  | P13/B7 |
 |:------:|:--------:|:------:|:------:|
 | 0x0300 | 0x0400   | 0x0800 | 0x0A00 |
 
@@ -56,15 +56,15 @@ The reverser+handle byte combines two values representing the state of the rever
 
 The first button byte uses six bits to represent the state of the physical buttons. **0** means that the button is released and **1** that it is pressed. A bitmask can be used to retrieve the buttons.
 
-| Button 1 | Button 2 | Button 3 | Button 4 | Button 5 | Button 6 |
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| ATS      | D        | A (soft) | A (hard) | B        | C        |
+| Bit 0 | Bit 1 | Bit 2    | Bit 3    | Bit 4 | Bit 5 |
+|:-----:|:-----:|:--------:|:--------:|:-----:|:-----:|
+| ATS   | D     | A (soft) | A (hard) | B     | C     |
 
 The second button byte also uses six bits to represent the state of the physical buttons.
 
-| Button 1 | Button 2 | Button 3 | Button 4 | Button 5 | Button 6 |
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| START    | SELECT   | UP       | DOWN     | LEFT     | RIGHT    |
+| Bit 0 | Bit 1  | Bit 2 | Bit 3 | Bit 4 | Bit 5 |
+|:-----:|:------:|:-----:|:-----:|:-----:|:-----:|
+| START | SELECT | UP    | DOWN  | LEFT  | RIGHT |
 
 #### Output
 

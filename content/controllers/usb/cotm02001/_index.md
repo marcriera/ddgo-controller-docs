@@ -6,7 +6,7 @@ title: "Train Mascon (Sony PlayStation 2)"
 
 This controller has one handle (5 power notches and 8+emergency brake notches), a D-Pad and 7 buttons (Select, Start, A, B, C, Close, ATS). The A button can distinguish between "soft" and "hard" presses. In addition, the controller has four lamps: doors, ATS, 45 and 15.
 
-Internally, it is a HID device with a vendor-specific class. The reported data depends on the notch cartridge inserted. 
+Internally, it is a vendor-specific class device. 
 
 |                             |                                           |
 |-----------------------------|-------------------------------------------|
@@ -15,7 +15,7 @@ Internally, it is a HID device with a vendor-specific class. The reported data d
 | **Vendor ID**               | 0x1C06                                    |
 | **Product ID**              | 0x77A7                                    |
 | **Serial number**           | *Unavailable*                             |
-| **USB standard descriptor** | *Unavailable*                             |
+| **USB standard descriptor** | [Link](/controllers/usb/descriptors/sotp031201-P5B5_standard-descriptor.txt) from Multi Train Controller |
 | **HID report descriptor**   | [Link](/controllers/usb/descriptors/cotm02001_hid-report-descriptor.txt) (recreated, not provided by actual device) |
 
 ### Input
@@ -34,15 +34,15 @@ The reverser+handle byte combines two values representing the state of the rever
 
 The first button byte uses six bits to represent the state of the physical buttons. **0** means that the button is released and **1** that it is pressed. A bitmask can be used to retrieve the buttons.
 
-| Button 1 | Button 2 | Button 3 | Button 4 | Button 5 | Button 6 |
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| ATS      | Close    | A (soft) | A (hard) | B        | C        |
+| Bit 0 | Bit 1 | Bit 2    | Bit 3    | Bit 4 | Bit 5 |
+|:-----:|:-----:|:--------:|:--------:|:-----:|:-----:|
+| ATS   | Close | A (soft) | A (hard) | B     | C     |
 
 The second button byte also uses six bits to represent the state of the physical buttons.
 
-| Button 1 | Button 2 | Button 3 | Button 4 | Button 5 | Button 6 |
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| START    | SELECT   | UP       | DOWN     | LEFT     | RIGHT    |
+| Bit 0 | Bit 1  | Bit 2 | Bit 3 | Bit 4 | Bit 5 |
+|:-----:|:------:|:-----:|:-----:|:-----:|:-----:|
+| START | SELECT | UP    | DOWN  | LEFT  | RIGHT |
 
 ### Output
 
