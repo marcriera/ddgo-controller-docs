@@ -359,7 +359,7 @@ ps2_trainmidosuji:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 4 and brake to 6."
     - model: sotp031201
-      notes: "P4/B2-B7, P5-B5 cartridges."
+      notes: "P4/B2-B7, P5/B5 cartridges."
     - model: cotm02001
 
 ps2_traindensha:
@@ -375,7 +375,7 @@ ps2_traindensha:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 4 and brake to 7."
     - model: sotp031201
-      notes: "P4/B7, P5-B5 cartridges."
+      notes: "P4/B7, P5/B5 cartridges."
     - model: cotm02001
 
 ps2_trainkeitokei:
@@ -391,7 +391,7 @@ ps2_trainkeitokei:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 5 and brake to 5."
     - model: sotp031201
-      notes: "P5/B5, P13-B7 cartridges."
+      notes: "P5/B5, P13/B7 cartridges."
     - model: tcpp20011
     - model: cotm02001
 
@@ -408,7 +408,7 @@ ps2_trainshinkansen:
     - model: vok00106
       notes: "Requires official USB adapter. Set power to 5 and brake to 7."
     - model: sotp031201
-      notes: "P5/B7, P13-B7 cartridges."
+      notes: "P5/B7, P13/B7 cartridges."
     - model: tcpp20011
 
 ps3_railfanchicago:
@@ -815,7 +815,7 @@ switch_japanproodakyu:
       adapter: titan
 
 switch_japanexhakone:
-  name: "Japanese Rail Sim EX: Mountain Railway Odakyu Hakone"
+  name: "Japanese Rail Sim Hakone"
   namejp: "鉄道にっぽん！路線たびＥＸ 登山電車 小田急箱根編"
   date: 2024-09-19
   code: ""
