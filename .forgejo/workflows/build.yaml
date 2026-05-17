@@ -34,4 +34,4 @@ jobs:
           eval $(ssh-agent -s)
           echo "$SSH_PRIVATE_KEY" | ssh-add -
           ssh-keyscan -p $SSH_PORT $SSH_HOST > ~/.ssh/known_hosts
-          rsync -atv --progress --delete -e "ssh -p $SSH_PORT" ./public/ $SSH_USER@$SSH_HOST:/app
+          rsync -av --progress --delete -e "ssh -p $SSH_PORT" ./public/ $SSH_USER@$SSH_HOST:/app
