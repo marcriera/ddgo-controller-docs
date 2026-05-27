@@ -696,6 +696,18 @@
   hardware:
     - id: rd91mdt
 
+- id: pc_windows-runningtrain
+  name: "RUNNING TRAIN | 走ル列車！"
+  name_en: "RUNNING TRAIN"
+  date: 2026-05-25
+  system: pc_windows
+  series: other
+  url: "https://store.steampowered.com/app/4630570/RUNNING_TRAIN/"
+  hardware:
+    - id: dgoc44u
+    - id: zkns001
+    - id: zkns021
+
 - id: switch-ddgo_yamanote
   name_en: "Densha de GO! Hashirō Yamanote‑sen"
   name: "電車でGO!! はしろう山手線"
